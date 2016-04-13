@@ -21,12 +21,12 @@ export class TranslatePipe {
     transform(phraseKey, dynamicVariables) {
         let phrase = phraseKey.toString();
         let dynamicValues = dynamicVariables[0];
-        this.p = Observable.create(observer => {
+        this.asyncTranslation = Observable.create(observer => {
             observer.next(this.translate(phrase, dynamicValues));
             this.translationService.onChange(() => {
                 observer.next(this.translate(phrase, dynamicValues));
             });
         });
-        return this.p;
+        return this.asyncTranslation;
     }
 }

@@ -1,5 +1,6 @@
 // Angular
 import {ElementRef, Directive} from 'angular2/core';
+import {Observable} from 'rxjs/Rx';
 // Vendor
 import {Chomsky} from 'chomsky/lib/chomsky';
 // App
@@ -12,19 +13,20 @@ import {Chomsky} from 'chomsky/lib/chomsky';
         'dynamicValues'
     ]
 })
-class Translate {
-    constructor(element: ElementRef) {
+export class Translate {
+    constructor(chomsky: Chomsky, element: ElementRef) {
         this.element = element;
-        this.chomsky = new Chomsky;
+        this.translationService = chomsky;
     }
 
     ngOnInit() {
-        let text = '';
-        if (this.dynamicValues) {
-            text = this.chomsky.translate(this.translate, this.dynamicValues);
-        } else {
-            text = this.chomsky.translate(this.translate);
-        }
-        this.element.nativeElement.innerHTML = text;
+        this.translationService.onChange(() => {
+            this.renderContent(this.translate, this.dynamicValues)
+        });
+        this.renderContent(this.translate, this.dynamicValues);
+    }
+
+    renderContent(phrase, dynamicValues) {
+        this.element.nativeElement.innerHTML = this.translationService.translate(phrase, dynamicValues);
     }
 }

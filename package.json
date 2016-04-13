@@ -11,7 +11,9 @@
     "test": "npm run unit",
     "unit": "karma start --single-run",
     "tdd": "karma start",
-    "serve": "concurrently \"npm run build\" \"http-server public\""
+    "serve": "concurrently \"npm run build\" \"http-server public\"",
+    "compile:watch": "babel src --ignore .spec.js --out-dir lib --watch",
+    "prepublish": "npm run compile"
   },
   "main": "src/library.js",
   "author": "Kameron R. Sween <kameron@krsween.com>",

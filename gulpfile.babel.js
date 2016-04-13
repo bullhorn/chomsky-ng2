@@ -17,6 +17,7 @@ gulp.task('copy', () => {
     return gulp.src([
             'src/index.html',
             'src/**/*.json',
+            'src/**/*.css',
             'node_modules/angular2/bundles/angular2-polyfills.js',
             'node_modules/angular2/bundles/angular2-polyfills.min.js'
         ])
