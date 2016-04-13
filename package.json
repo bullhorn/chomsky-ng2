@@ -1,6 +1,6 @@
 {
   "name": "chomsky-ng2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An Angular 2 module that leverages Chomsky for i18n.",
   "scripts": {
     "postinstall": "webdriver-manager update",
@@ -20,6 +20,7 @@
   "author": "Kameron R. Sween <kameron@krsween.com>",
   "repository": "krsween/chomsky-ng2",
   "license": "MIT",
+  "keywords": ["i18n", "international", "internationalization", "localization", "pluralization", "angular2", "i18n"],
   "devDependencies": {
     "babel-core": "6.6.4",
     "babel-eslint": "^6.0.2",
