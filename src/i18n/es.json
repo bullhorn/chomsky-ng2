@@ -1,5 +1,0 @@
-{
-    "greeting": "¡Hola!",
-    "farewell": "Adios, {name}.",
-    "today": "Hoy es {today:date:DD[/]MM[/]YYYY}."
-}

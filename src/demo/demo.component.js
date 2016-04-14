@@ -22,16 +22,17 @@ import {Translate} from '../directive/translate.directive';
                 <div class="col-xs-12 text-center">
                     <h3 class="text-muted">Select A Language:</h3>
                     <div class="btn-group" role="group">
-                        <button type="button" (click)="changeLanguage('en')" [class.active]="currentLanguage === 'en'" class="btn btn-primary">English</button>
-                        <!--<button type="button" (click)="changeLanguage('en')" [class.active]="currentLanguage === 'en'" class="btn btn-primary">English</button>-->
-                        <button type="button" (click)="changeLanguage('es')" [class.active]="currentLanguage === 'es'" class="btn btn-primary">French</button>
+                        <button type="button" (click)="changeLanguage(usLocale)" [class.active]="currentLanguage === usLocale" class="btn btn-primary">English</button>
+                        <button type="button" (click)="changeLanguage(ruLocale)" [class.active]="currentLanguage === ruLocale" class="btn btn-primary">Russian</button>
+                        <button type="button" (click)="changeLanguage(frLocale)" [class.active]="currentLanguage === frLocale" class="btn btn-primary">French</button>
                     </div>
                 </div>
             </section>
+            <div class="clear-fix">&nbsp;</div>
             <!-- PIPE & DIRECTIVE -->
             <section class="row">
                 <!-- PIPE -->
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-3">
                     <h2>Pipe</h2>
                     <br>
                     <p><strong>Simple Text</strong></p>
@@ -40,13 +41,13 @@ import {Translate} from '../directive/translate.directive';
                     <p>{{ 'farewell' | translate:{ name: 'John' } | async }}</p>
                     <p><strong>Variable Date</strong></p>
                     <p>{{ 'today' | translate:{ today: localToday } | async }}</p>
-                    <p><strong>Variable Number</strong></p>
-                    <p>todo</p>
+                    <!--<p><strong>Variable Number</strong></p>-->
+                    <!--<p>{{ 'today' | translate:{ today: localToday } | async }}</p>-->
                     <p><strong>Variable Currency</strong></p>
-                    <p>todo</p>
+                    <p>{{ 'debt' | translate:{ balance: demoVariables.balance } | async }}</p>
                 </div>
                 <!-- DIRECTIVE -->
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-3">
                     <h2>Directive</h2>
                     <br>
                     <p><strong>Simple Text</strong></p>
@@ -55,10 +56,16 @@ import {Translate} from '../directive/translate.directive';
                     <p [translate]="'farewell'" [dynamicValues]="demoVariables"></p>
                     <p><strong>Variable Date</strong></p>
                     <p [translate]="'today'" [dynamicValues]="demoVariables"></p>
-                    <p><strong>Variable Number</strong></p>
-                    <p>todo</p>
+                    <!--<p><strong>Variable Number</strong></p>-->
+                    <!--<p>todo</p>-->
                     <p><strong>Variable Currency</strong></p>
-                    <p>todo</p>
+                    <p [translate]="'debt'" [dynamicValues]="demoVariables"></p>
+                </div>
+                <!-- JSON -->
+                <div class="col-xs-12 col-md-6">
+                    <h2>JSON</h2>
+                    <br>
+                    <pre>{{ chomsky.dictionaryManager.dictionaries[currentLanguage] | json }}</pre>
                 </div>
             </section>
         </div>
@@ -78,17 +85,19 @@ export class DemoApp {
         let enTranslation = {
             greeting: 'Hello!',
             farewell: 'Goodbye, {name}.',
-            today: 'Today is { today:date:MM[/]DD[/]YYYY }.'
+            today: 'Today is {today:date}.',
+            debt: 'You owe: {balance:currency:USD}'
         };
-
-        this.currentLanguage = 'es';
+        
+        this.usLocale = 'en-US';
+        this.frLocale = 'fr-FR';
+        this.ruLocale = 'ru-RU';
 
         // HTTP Load es
-        this.chomsky.setLanguage('es', './i18n/es.json');
+        this.chomsky.setLanguage(this.frLocale, './i18n/fr-FR.json');
+        this.chomsky.setLanguage(this.ruLocale, './i18n/ru-RU.json');
         // Object Load English
-        this.chomsky.setLanguage('en', enTranslation);
-        // Set Language to ES
-        this.chomsky.setLanguage('es');
+        this.chomsky.setLanguage(this.usLocale, enTranslation);
 
         // Variable for today
         this.localToday = new Date();
@@ -97,8 +106,11 @@ export class DemoApp {
 
         this.demoVariables = {
             today: new Date(),
-            name: 'Jane'
+            name: 'Jane',
+            balance: 9874.34
         };
+
+        this.changeLanguage(this.ruLocale);
     }
 
     changeLanguage(language) {

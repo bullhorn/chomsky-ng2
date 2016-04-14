@@ -16,7 +16,7 @@
     "compile:watch": "babel src --ignore .spec.js --out-dir lib --watch",
     "prepublish": "npm run compile"
   },
-  "main": "src/library.js",
+  "main": "lib/chomsky.js",
   "author": "Kameron R. Sween <kameron@krsween.com>",
   "repository": "krsween/chomsky-ng2",
   "license": "MIT",
