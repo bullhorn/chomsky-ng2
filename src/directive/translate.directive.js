@@ -2,9 +2,9 @@
 import {ElementRef, Directive} from 'angular2/core';
 import {Observable} from 'rxjs/Rx';
 // Vendor
-import {Chomsky} from 'chomsky/lib/chomsky';
+//import {Chomsky} from 'chomsky/lib/chomsky';
 // App
-
+import {NGChomsky} from '../service/ngchomsky.service';
 
 @Directive({
     selector: '[translate]',
@@ -14,7 +14,7 @@ import {Chomsky} from 'chomsky/lib/chomsky';
     ]
 })
 export class Translate {
-    constructor(chomsky: Chomsky, element: ElementRef) {
+    constructor(chomsky: NGChomsky, element: ElementRef) {
         this.element = element;
         this.translationService = chomsky;
     }

@@ -2,15 +2,16 @@
 import {Pipe} from 'angular2/core';
 import {Observable} from 'rxjs/Rx';
 // Vendor
-import {Chomsky} from 'chomsky/lib/chomsky';
+//import {Chomsky} from 'chomsky/lib/chomsky';
 // App
+import {NGChomsky} from '../service/ngchomsky.service';
 
 @Pipe({
     name: 'translate'
 })
 export class TranslatePipe {
 
-    constructor(chomsky: Chomsky) {
+    constructor(chomsky: NGChomsky) {
         this.translationService = chomsky;
     }
 

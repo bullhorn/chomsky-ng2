@@ -7,9 +7,11 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 import {Chomsky} from 'chomsky/lib/chomsky';
 // App
 import {DemoApp} from './demo/demo.component';
+import {NGChomsky} from './service/ngchomsky.service';
+
 
 bootstrap(DemoApp, [
     CORE_DIRECTIVES,
-    provide(Chomsky, {useClass: Chomsky}),
+    NGChomsky,
     HTTP_PROVIDERS
 ]).catch(err => console.error(err));
