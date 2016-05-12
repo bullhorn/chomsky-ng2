@@ -1,3 +1,26 @@
-public/
+.idea/
+logs/
+
+.editorconfig
+.eslintrc
+.npmignore
+.babelrc
+.gitignore
+.travis.yml
+CHANGELOG.md
+CONTRIBUTING.md
+.eslintignore
+.codeclimate.yml
+
+config/
 src/
-test/
+.github/
+
+# testing
+karma.conf.js
+coverage/
+
+# demo build
+demo/
+webpack.config.js
+

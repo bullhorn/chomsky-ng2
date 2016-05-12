@@ -1,22 +1,18 @@
-// Angular
-import {Pipe} from 'angular2/core';
-import {Observable} from 'rxjs/Rx';
-// Vendor
-//import {Chomsky} from 'chomsky/lib/chomsky';
-// App
-import {NGChomsky} from '../service/ngchomsky.service';
+import { Pipe } from 'angular2/core';
+import { Observable } from 'rxjs/Rx';
+
+import { TranslateService } from '../services/translate.service';
 
 @Pipe({
     name: 'translate'
 })
 export class TranslatePipe {
-
-    constructor(chomsky: NGChomsky) {
-        this.translationService = chomsky;
+    constructor(translateService:TranslateService) {
+        this.translateService = translateService;
     }
 
     translate(phrase, dynamicValues) {
-        return this.translationService.translate(phrase, dynamicValues);
+        return this.translateService.translate(phrase, dynamicValues);
     }
 
     transform(phraseKey, dynamicVariables) {
@@ -24,7 +20,7 @@ export class TranslatePipe {
         let dynamicValues = dynamicVariables[0];
         this.asyncTranslation = Observable.create(observer => {
             observer.next(this.translate(phrase, dynamicValues));
-            this.translationService.onChange(() => {
+            this.translateService.onChange(() => {
                 observer.next(this.translate(phrase, dynamicValues));
             });
         });
