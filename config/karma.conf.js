@@ -14,7 +14,12 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         // we are building the test environment in ./spec-bundle.js
-        files: [{ pattern: './config/spec-bundle.js', watched: false }],
+        files: [
+            'node_modules/moment/min/moment-with-locales.min.js',
+            'node_modules/numbro/dist/numbro.min.js',
+            'node_modules/numbro/dist/languages.min.js',
+            { pattern: './config/spec-bundle.js', watched: false }
+        ],
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
