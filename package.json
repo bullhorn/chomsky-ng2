@@ -27,7 +27,8 @@
   },
   "main": "lib/chomsky-ng2.js",
   "keywords": [
-    "angular2"
+    "angular2",
+    "translations"
   ],
   "author": "Kameron R. Sween <kameron@krsween.com>",
   "license": "MIT",
