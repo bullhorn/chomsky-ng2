@@ -1,6 +1,6 @@
 {
   "name": "chomsky-ng2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Angular 2 module that leverages Chomsky for i18n.",
   "scripts": {
     "clean": "./node_modules/.bin/del bundles coverage lib dist",
@@ -43,11 +43,10 @@
   },
   "homepage": "https://github.com/bullhorn/chomsky-ng2",
   "dependencies": {
-    "angular2": "2.0.0-beta.15",
-    "chomsky": "~1.0.0",
-    "moment": "^2.13.0"
+    "chomsky": "~1.0.0"
   },
   "devDependencies": {
+    "angular2": "2.0.0-beta.15",
     "async": "^2.0.0-rc.3",
     "autoprefixer-loader": "^3.2.0",
     "babel-cli": "~6.8.0",
@@ -89,6 +88,7 @@
     "karma-phantomjs-launcher": "1.0.0",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "1.7.0",
+    "moment": "^2.13.0",
     "node-sass": "^3.4.2",
     "phantomjs-polyfill": "0.0.2",
     "phantomjs-prebuilt": "2.1.7",
