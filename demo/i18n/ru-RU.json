@@ -2,5 +2,5 @@
     "greeting": "Привет!",
     "farewell": "Прощай, {name}.",
     "today": "Сегодня {today:date}.",
-    "debt": "Вы должны: {balance:currency:RUB}"
+    "debt": "Вы должны: {balance:currency}"
 }

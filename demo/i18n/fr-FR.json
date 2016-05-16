@@ -2,5 +2,5 @@
     "greeting": "Bonjour!",
     "farewell": "Au revoir, {name}.",
     "today": "Aujourd hui est {today:date}.",
-    "debt": "Vouz devez: {balance:currency:EUR}"
+    "debt": "Vouz devez: {balance:currency}"
 }

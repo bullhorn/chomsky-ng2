@@ -25,7 +25,7 @@ export class DemoApp {
             greeting: 'Hello!',
             farewell: 'Goodbye, {name}.',
             today: 'Today is {today:date}.',
-            debt: 'You owe: {balance:currency:USD}'
+            debt: 'You owe: {balance:currency}'
         };
 
         this.usLocale = 'en-US';
