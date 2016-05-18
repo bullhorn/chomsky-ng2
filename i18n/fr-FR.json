@@ -1,6 +1,12 @@
 {
-    "greeting": "Bonjour!",
-    "farewell": "Au revoir, {name}.",
-    "today": "Aujourd hui est {today:date}.",
-    "debt": "Vouz devez: {balance:currency:EUR}"
+  "greeting": "Bonjour!",
+  "farewell": "Au revoir, {name}.",
+  "today": "Aujourd hui est {today:date}.",
+  "debt": "Vouz devez: {balance:currency}",
+  "messages": {
+    "zero": "Vous n'avez pas de messages.",
+    "1": "Vous avez {count:number} message.",
+    "20": "Vous avez {count:number:0.00} messages.",
+    "many": "Vous avez {count:number} messages."
+  }
 }
