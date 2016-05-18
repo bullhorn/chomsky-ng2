@@ -13,11 +13,11 @@ export class TranslatePipe {
         this.latestValue = null;
     }
 
-    ngOnDestroy() {
-        this.translateService.changeHandler.unsubscribe();
-        this.subscription = null;
-        this.latestValue = null;
-    }
+    //ngOnDestroy() {
+    //    this.translateService.changeHandler.unsubscribe();
+    //    this.subscription = null;
+    //    this.latestValue = null;
+    //}
 
     transform(phraseKey, dynamicVariables) {
         if (!this.subscription) {

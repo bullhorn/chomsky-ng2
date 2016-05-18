@@ -22,9 +22,9 @@ export class Translate {
         this.renderContent(this.translate, this.dynamicValues);
     }
 
-    ngOnDestroy() {
-        this.translateService.changeHandler.unsubscribe();
-    }
+    //ngOnDestroy() {
+    //    this.translateService.changeHandler.unsubscribe();
+    //}
 
     renderContent(phrase, dynamicValues) {
         this.element.nativeElement.innerHTML = this.translateService.translate(phrase, dynamicValues);
