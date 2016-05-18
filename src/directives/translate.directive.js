@@ -16,10 +16,14 @@ export class Translate {
     }
 
     ngOnInit() {
-        this.translateService.onChange(() => {
+        this.translateService.changeHandler.subscribe(() => {
             this.renderContent(this.translate, this.dynamicValues);
         });
         this.renderContent(this.translate, this.dynamicValues);
+    }
+
+    ngOnDestroy() {
+        this.translateService.changeHandler.unsubscribe();
     }
 
     renderContent(phrase, dynamicValues) {

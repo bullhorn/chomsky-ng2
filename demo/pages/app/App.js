@@ -25,7 +25,13 @@ export class DemoApp {
             greeting: 'Hello!',
             farewell: 'Goodbye, {name}.',
             today: 'Today is {today:date}.',
-            debt: 'You owe: {balance:currency}'
+            debt: 'You owe: {balance:currency}',
+            messages: {
+                zero: 'You have no messages.',
+                1: 'You have {count:number} message.',
+                20: 'You have {count:number:0.00} messages.',
+                many: 'You have {count:number} messages.'
+            }
         };
 
         this.usLocale = 'en-US';
@@ -33,10 +39,14 @@ export class DemoApp {
         this.ruLocale = 'ru-RU';
 
         // HTTP Load es
-        this.translateService.setLanguage(this.frLocale, './../../i18n/fr-FR.json');
-        this.translateService.setLanguage(this.ruLocale, './../../i18n/ru-RU.json');
-        // Object Load English
-        this.translateService.setLanguage(this.usLocale, enTranslation);
+        Promise.all([
+            this.translateService.setLanguage(this.frLocale, './../../i18n/fr-FR.json'),
+            this.translateService.setLanguage(this.ruLocale, './../../i18n/ru-RU.json')
+        ])
+            .then(() => {
+                // Object Load English
+                this.translateService.setLanguage(this.usLocale, enTranslation);
+            });
 
         // Variable for today
         this.localToday = new Date();
@@ -49,7 +59,7 @@ export class DemoApp {
             balance: 9874.34
         };
 
-        this.changeLanguage(this.ruLocale);
+        this.changeLanguage(this.usLocale);
     }
 
     getDictionary(languageKey) {

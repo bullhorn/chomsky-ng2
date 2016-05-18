@@ -25,15 +25,18 @@
             <h2>Pipe</h2>
             <br>
             <p><strong>Simple Text</strong></p>
-            <p>{{ 'greeting' | translate | async }}</p>
+            <p>{{ 'greeting' | translate }}</p>
             <p><strong>Variable</strong></p>
-            <p>{{ 'farewell' | translate:{ name: 'John' } | async }}</p>
+            <p>{{ 'farewell' | translate:{ name: 'John' } }}</p>
             <p><strong>Variable Date</strong></p>
-            <p>{{ 'today' | translate:{ today: localToday } | async }}</p>
-            <p><strong>Variable Number</strong></p>
-            <p>{{ 'today' | translate:{ today: localToday } | async }}</p>
+            <p>{{ 'today' | translate:{ today: localToday } }}</p>
+            <p><strong>Pluralized Number</strong></p>
+            <p>{{ 'messages' | translate:0 }}</p>
+            <p>{{ 'messages' | translate:1 }}</p>
+            <p>{{ 'messages' | translate:20 }}</p>
+            <p>{{ 'messages' | translate:125 }}</p>
             <p><strong>Variable Currency</strong></p>
-            <p>{{ 'debt' | translate:{ balance: demoVariables.balance } | async }}</p>
+            <p>{{ 'debt' | translate:{ balance: demoVariables.balance } }}</p>
         </div>
         <!-- DIRECTIVE -->
         <div class="col-xs-12 col-md-3">
@@ -45,8 +48,11 @@
             <p [translate]="'farewell'" [dynamicValues]="demoVariables"></p>
             <p><strong>Variable Date</strong></p>
             <p [translate]="'today'" [dynamicValues]="demoVariables"></p>
-            <p><strong>Variable Number</strong></p>
-            <p>todo</p>
+            <p><strong>Pluralized Number</strong></p>
+            <p [translate]="'messages'" [dynamicValues]="0"></p>
+            <p [translate]="'messages'" [dynamicValues]="1"></p>
+            <p [translate]="'messages'" [dynamicValues]="20"></p>
+            <p [translate]="'messages'" [dynamicValues]="125"></p>
             <p><strong>Variable Currency</strong></p>
             <p [translate]="'debt'" [dynamicValues]="demoVariables"></p>
         </div>
