@@ -23,7 +23,8 @@ export class Translate {
     }
 
     //ngOnDestroy() {
-    //    this.translateService.changeHandler.unsubscribe();
+        //this.translateService.changeHandler.unsubscribe();
+        //this.subscription.dispose();
     //}
 
     renderContent(phrase, dynamicValues) {

@@ -13,19 +13,14 @@ export class TranslatePipe {
         this.latestValue = null;
     }
 
-    //ngOnDestroy() {
-    //    this.translateService.changeHandler.unsubscribe();
-    //    this.subscription = null;
-    //    this.latestValue = null;
-    //}
+    ngOnDestroy() {
+        if (this.subscription) {
+            this.subscription.unsubscribe();
+            this.subscription = undefined;
+        }
+    }
 
     transform(phraseKey, dynamicVariables) {
-        if (!this.subscription) {
-            this.subscription = this.translateService.changeHandler.subscribe(() => {
-                this.latestValue = this.translateService.translate(phraseKey.toString(), dynamicVariables[0]);
-                this.changeDetector.markForCheck();
-            });
-        }
-        return this.latestValue;
+        return this.translateService.liveTranslate(phraseKey, dynamicVariables[0]);
     }
 }
