@@ -1,4 +1,4 @@
-import { Injectable, Provider } from 'angular2/core';
+import { Injectable, Provider } from '@angular/core';
 import { Chomsky } from 'chomsky/lib/chomsky';
 
 @Injectable()

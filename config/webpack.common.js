@@ -5,7 +5,7 @@ const pkg = require('../package.json');
 /**
  * Webpack Plugins
  */
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+var CopyWebpackPlugin = (CopyWebpackPlugin = require('copy-webpack-plugin'), CopyWebpackPlugin.default || CopyWebpackPlugin);
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /**
@@ -60,8 +60,8 @@ module.exports = {
             'es6-promise',
             'zone.js',
             'reflect-metadata',
-            'angular2/common',
-            'angular2/core'
+            '@angular/common',
+            '@angular/core'
         ],
         'lib': [`src/${METADATA.name}`],
         'demo': 'demo'
@@ -80,7 +80,17 @@ module.exports = {
         root: helpers.root(METADATA.name),
 
         // remove other default values
-        modulesDirectories: ['node_modules', METADATA.name]
+        modulesDirectories: ['node_modules', METADATA.name],
+
+        alias: {
+            'angular2/core': helpers.root('node_modules/@angular/core/index.js'),
+            'angular2/testing': helpers.root('node_modules/@angular/core/testing.js'),
+            'angular2/platform/browser': helpers.root('node_modules/@angular/platform-browser/index.js'),
+            'angular2/testing': helpers.root('node_modules/@angular/testing/index.js'),
+            'angular2/router': helpers.root('node_modules/@angular/router-deprecated/index.js'),
+            'angular2/http': helpers.root('node_modules/@angular/http/index.js'),
+            'angular2/http/testing': helpers.root('node_modules/@angular/http/testing.js')
+        }
     },
 
     // Options affecting the normal modules.
@@ -112,7 +122,8 @@ module.exports = {
                 loader: 'source-map-loader',
                 exclude: [
                     // these packages have problems with their sourcemaps
-                    helpers.root('node_modules/rxjs')
+                    helpers.root('node_modules/rxjs'),
+                    helpers.root('node_modules/@angular')
                 ]
             }
         ],
@@ -209,7 +220,7 @@ module.exports = {
         // See: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
         // See: https://github.com/webpack/docs/wiki/optimization#multi-page-app
         new webpack.optimize.CommonsChunkPlugin({
-            name: helpers.reverse(['vendor', 'lib', 'demo']),
+            name: ['vendor', 'lib', 'demo'].reverse(),
             minChunks: Infinity
         }),
 
@@ -236,7 +247,7 @@ module.exports = {
         // See: https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
             template: 'demo/index.html',
-            chunksSortMode: helpers.packageSort(['vendor', 'lib', 'demo'])
+            chunksSortMode: 'dependency'
         })
     ],
 

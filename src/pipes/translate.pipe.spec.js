@@ -1,4 +1,3 @@
-import { describe, it, beforeEach } from 'angular2/testing';
 import { TranslatePipe } from './translate.pipe';
 
 describe('Pipe: TranslatePipe', () => {

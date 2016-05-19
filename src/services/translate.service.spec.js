@@ -1,4 +1,3 @@
-import { describe, it, beforeEach } from 'angular2/testing';
 import { TranslateService } from './translate.service';
 
 describe('Service: TranslateService', () => {

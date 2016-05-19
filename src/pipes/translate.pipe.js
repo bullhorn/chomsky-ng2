@@ -1,4 +1,4 @@
-import { Pipe, ChangeDetectorRef } from 'angular2/core';
+import { Pipe, ChangeDetectorRef } from '@angular/core';
 import { TranslateService } from '../services/translate.service';
 
 @Pipe({
@@ -6,7 +6,7 @@ import { TranslateService } from '../services/translate.service';
     pure: false
 })
 export class TranslatePipe {
-    constructor(translateService:TranslateService, changeDetector: ChangeDetectorRef) {
+    constructor(translateService:TranslateService, changeDetector:ChangeDetectorRef) {
         this.translateService = translateService;
         this.changeDetector = changeDetector;
         this.onLangChange = null;
@@ -63,15 +63,15 @@ export class TranslatePipe {
         if (!phraseKey || phraseKey.length === 0) {
             return phraseKey;
         }
-        if (this.equals(phraseKey, this.lastKey) && this.equals(dynamicVariables[0], this.lastParams)) {
+        if (this.equals(phraseKey, this.lastKey) && this.equals(dynamicVariables, this.lastParams)) {
             return this.value;
         }
         this.lastKey = phraseKey;
-        this.lastParams = dynamicVariables[0];
-        this.updateValue(phraseKey, dynamicVariables[0]);
+        this.lastParams = dynamicVariables;
+        this.updateValue(phraseKey, dynamicVariables);
         this.unsubscribe();
         this.onLangChange = this.translateService.changeHandler.subscribe(() => {
-            this.updateValue(phraseKey, dynamicVariables[0]);
+            this.updateValue(phraseKey, dynamicVariables);
         });
         return this.value;
     }
