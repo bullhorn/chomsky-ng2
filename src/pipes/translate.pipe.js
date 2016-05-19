@@ -9,18 +9,77 @@ export class TranslatePipe {
     constructor(translateService:TranslateService, changeDetector: ChangeDetectorRef) {
         this.translateService = translateService;
         this.changeDetector = changeDetector;
-        this.subscription = null;
-        this.latestValue = null;
+        this.onLangChange = null;
+        this.lastKey = '';
+        this.lastParams = '';
+    }
+
+    equals(objectOne, objectTwo) {
+        if (objectOne === objectTwo) return true;
+        if (objectOne === null || objectTwo === null) return false;
+        if (objectOne !== objectOne && objectTwo !== objectTwo) return true; // eslint-disable-line
+        let typeOne = typeof objectOne, typeTwo = typeof objectTwo, length, key, keySet;
+        if (typeOne === typeTwo && typeOne === 'object') {
+            if (Array.isArray(objectOne)) {
+                if (!Array.isArray(objectTwo)) return false;
+                if ((length = objectOne.length) === objectTwo.length) { // eslint-disable-line
+                    for (key = 0; key < length; key++) {
+                        if (!this.equals(objectOne[key], objectTwo[key])) return false;
+                    }
+                    return true;
+                }
+            } else {
+                if (Array.isArray(objectTwo)) {
+                    return false;
+                }
+                keySet = Object.create(null);
+                for (key in objectOne) {
+                    if (!this.equals(objectOne[key], objectTwo[key])) {
+                        return false;
+                    }
+                    keySet[key] = true;
+                }
+                for (key in objectTwo) {
+                    if (!(key in keySet) && typeof objectTwo[key] !== 'undefined') {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        return false;
     }
 
     ngOnDestroy() {
-        if (this.subscription) {
-            this.subscription.unsubscribe();
-            this.subscription = undefined;
-        }
+        this.unsubscribe();
+    }
+
+    updateValue(phraseKey, dynamicVariables) {
+        this.value = this.translateService.translate(phraseKey, dynamicVariables);
+        this.changeDetector.markForCheck();
     }
 
     transform(phraseKey, dynamicVariables) {
-        return this.translateService.liveTranslate(phraseKey, dynamicVariables[0]);
+        if (!phraseKey || phraseKey.length === 0) {
+            return phraseKey;
+        }
+        if (this.equals(phraseKey, this.lastKey) && this.equals(dynamicVariables[0], this.lastParams)) {
+            return this.value;
+        }
+        this.lastKey = phraseKey;
+        this.lastParams = dynamicVariables[0];
+        this.updateValue(phraseKey, dynamicVariables[0]);
+        this.unsubscribe();
+        this.onLangChange = this.translateService.changeHandler.subscribe(() => {
+            this.updateValue(phraseKey, dynamicVariables[0]);
+        });
+        return this.value;
+    }
+
+    unsubscribe() {
+        if (this.onLangChange) {
+            this.onLangChange.unsubscribe();
+            this.onLangChange = undefined;
+        }
     }
 }
