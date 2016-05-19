@@ -1,3 +1,8 @@
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/bullhorn/chomsky-ng2/compare/v1.0.6...v1.0.7) (2016-05-19)
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/bullhorn/chomsky-ng2/compare/v1.0.2...v1.0.6) (2016-05-19)
 

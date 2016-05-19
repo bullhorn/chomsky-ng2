@@ -1,6 +1,6 @@
 {
   "name": "chomsky-ng2",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "An Angular 2 module that leverages Chomsky for i18n.",
   "scripts": {
     "clean": "./node_modules/.bin/del bundles coverage lib dist",
