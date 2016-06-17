@@ -70,7 +70,7 @@ export class TranslatePipe {
         this.lastParams = dynamicVariables;
         this.updateValue(phraseKey, dynamicVariables);
         this.unsubscribe();
-        this.onLangChange = this.translateService.changeHandler.subscribe(() => {
+        this.onLangChange = this.translateService.onLocaleChange.subscribe(() => {
             this.updateValue(phraseKey, dynamicVariables);
         });
         return this.value;

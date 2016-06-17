@@ -16,17 +16,17 @@ export class Translate {
     }
 
     ngOnInit() {
-        this.translateService.changeHandler.subscribe(() => {
+        this.translateService.onLocaleChange.subscribe(() => {
             this.renderContent(this.translate, this.dynamicValues);
         });
         this.renderContent(this.translate, this.dynamicValues);
     }
 
     ngOnDestroy() {
-        this.translateService.changeHandler.unsubscribe();
+        this.translateService.onLocaleChange.unsubscribe();
     }
 
-    renderContent(phrase, dynamicValues) {
-        this.element.nativeElement.innerHTML = this.translateService.translate(phrase, dynamicValues);
+    renderContent(key, interpolation) {
+        this.element.nativeElement.innerHTML = this.translateService.translate(key, interpolation);
     }
 }

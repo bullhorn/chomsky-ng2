@@ -60,7 +60,7 @@
         <div class="col-xs-12 col-md-6">
             <h2>JSON</h2>
             <br>
-            <pre>{{ getDictionary(currentLanguage) | json }}</pre>
+            <pre>{{ translateService.dictionaryManager.dictionaries[currentLocale] | json }}</pre>
         </div>
     </section>
 </div>
