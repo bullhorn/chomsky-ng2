@@ -20,56 +20,29 @@ export class DemoApp {
     constructor(translateService:TranslateService) {
         // Local instance
         this.translateService = translateService;
-        // Sample english translation
-        let enTranslation = {
-            greeting: 'Hello!',
-            farewell: 'Goodbye, {name}.',
-            today: 'Today is {today:date}.',
-            debt: 'You owe: {balance:currency}',
-            messages: {
-                zero: 'You have no messages.',
-                1: 'You have {count:number} message.',
-                20: 'You have {count:number:0.00} messages.',
-                many: 'You have {count:number} messages.'
-            }
-        };
-
+        // Locales
         this.usLocale = 'en-US';
         this.frLocale = 'fr-FR';
         this.ruLocale = 'ru-RU';
-
-        // HTTP Load es
-        Promise.all([
-            this.translateService.setLanguage(this.frLocale, './../../i18n/fr-FR.json'),
-            this.translateService.setLanguage(this.ruLocale, './../../i18n/ru-RU.json')
-        ])
-            .then(() => {
-                // Object Load English
-                this.translateService.setLanguage(this.usLocale, enTranslation);
-            });
+        // Listen for changes
+        this.translateService.onLocaleChange.subscribe(locale => {
+            console.log(`[Language Change]: ${locale}`); // eslint-disable-line
+        });
+        // Use en-US
+        this.translateService.use(this.usLocale);
 
         // Variable for today
         this.localToday = new Date();
-
         this.greeting = 'greeting';
-
         this.demoVariables = {
             today: new Date(),
             name: 'Jane',
             balance: 9874.34
         };
-
-        this.changeLanguage(this.usLocale);
     }
 
-    getDictionary(languageKey) {
-        let languageCode = (languageKey.split('-')[0] || '').toLowerCase();
-        let variantCode = (languageKey.split('-')[1] || '').toUpperCase();
-        return this.translateService.dictionaryManager.dictionaries[languageCode][variantCode];
-    }
-
-    changeLanguage(language) {
-        this.currentLanguage = language;
-        this.translateService.setLanguage(language);
+    changeLanguage(locale) {
+        this.currentLocale = locale;
+        this.translateService.use(locale);
     }
 }
