@@ -4,22 +4,22 @@ webpackJsonp([2],[
 
 	'use strict';
 	
-	var _platformBrowserDynamic = __webpack_require__(294);
+	var _platformBrowserDynamic = __webpack_require__(295);
 	
 	var _common = __webpack_require__(48);
 	
 	var _chomskyNg = __webpack_require__(136);
 	
-	var _App = __webpack_require__(316);
+	var _App = __webpack_require__(317);
 	
-	__webpack_require__(554);
+	__webpack_require__(553);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	(0, _platformBrowserDynamic.bootstrap)(_App.DemoApp, [].concat(_toConsumableArray(_chomskyNg.TRANSLATE_PROVIDERS), [{ provide: _common.LocationStrategy, useClass: _common.HashLocationStrategy }])).catch(function (err) {
 	    return console.error(err);
 	}); // eslint-disable-line
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFDQTs7QUFFQTs7QUFFQTs7QUFDQTs7OztBQUVBLG9IQUVJLEVBQUUsaUNBQUYsRUFBNkIsc0NBQTdCLEVBRkosSUFHRyxLQUhILENBR1M7QUFBQSxXQUFPLFFBQVEsS0FBUixDQUFjLEdBQWQsQ0FBUDtBQUFBLENBSFQsRSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvYmgvbm92by90b29scy9jaG9tc2t5LW5nMiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGJvb3RzdHJhcCB9IGZyb20gJ0Bhbmd1bGFyL3BsYXRmb3JtLWJyb3dzZXItZHluYW1pYyc7XG5pbXBvcnQgeyBMb2NhdGlvblN0cmF0ZWd5LCBIYXNoTG9jYXRpb25TdHJhdGVneSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XG5cbmltcG9ydCB7IFRSQU5TTEFURV9QUk9WSURFUlMgfSBmcm9tICcuLy4uL3NyYy9jaG9tc2t5LW5nMic7XG5cbmltcG9ydCB7IERlbW9BcHAgfSBmcm9tICcuL3BhZ2VzL2FwcC9BcHAnO1xuaW1wb3J0ICcuL2luZGV4LnNjc3MnO1xuXG5ib290c3RyYXAoRGVtb0FwcCwgW1xuICAgIC4uLlRSQU5TTEFURV9QUk9WSURFUlMsXG4gICAgeyBwcm92aWRlOiBMb2NhdGlvblN0cmF0ZWd5LCB1c2VDbGFzczogSGFzaExvY2F0aW9uU3RyYXRlZ3kgfVxuXSkuY2F0Y2goZXJyID0+IGNvbnNvbGUuZXJyb3IoZXJyKSk7IC8vIGVzbGludC1kaXNhYmxlLWxpbmVcbiJdfQ==
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFDQTs7QUFFQTs7QUFFQTs7QUFDQTs7OztBQUVBLG9IQUVJLEVBQUUsaUNBQUYsRUFBNkIsc0NBQTdCLEVBRkosSUFHRyxLQUhILENBR1M7QUFBQSxXQUFPLFFBQVEsS0FBUixDQUFjLEdBQWQsQ0FBUDtBQUFBLENBSFQsRSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvbm92by1kZXYvdG9vbHMvY2hvbXNreS1uZzIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBib290c3RyYXAgfSBmcm9tICdAYW5ndWxhci9wbGF0Zm9ybS1icm93c2VyLWR5bmFtaWMnO1xuaW1wb3J0IHsgTG9jYXRpb25TdHJhdGVneSwgSGFzaExvY2F0aW9uU3RyYXRlZ3kgfSBmcm9tICdAYW5ndWxhci9jb21tb24nO1xuXG5pbXBvcnQgeyBUUkFOU0xBVEVfUFJPVklERVJTIH0gZnJvbSAnLi8uLi9zcmMvY2hvbXNreS1uZzInO1xuXG5pbXBvcnQgeyBEZW1vQXBwIH0gZnJvbSAnLi9wYWdlcy9hcHAvQXBwJztcbmltcG9ydCAnLi9pbmRleC5zY3NzJztcblxuYm9vdHN0cmFwKERlbW9BcHAsIFtcbiAgICAuLi5UUkFOU0xBVEVfUFJPVklERVJTLFxuICAgIHsgcHJvdmlkZTogTG9jYXRpb25TdHJhdGVneSwgdXNlQ2xhc3M6IEhhc2hMb2NhdGlvblN0cmF0ZWd5IH1cbl0pLmNhdGNoKGVyciA9PiBjb25zb2xlLmVycm9yKGVycikpOyAvLyBlc2xpbnQtZGlzYWJsZS1saW5lXG4iXX0=
 
 /***/ },
 /* 1 */,
@@ -6219,27 +6219,27 @@ webpackJsonp([2],[
 	var dom_sanitization_service_1 = __webpack_require__(219);
 	var lang_1 = __webpack_require__(14);
 	var browser_adapter_1 = __webpack_require__(132);
-	var testability_1 = __webpack_require__(304);
+	var testability_1 = __webpack_require__(305);
 	var dom_adapter_1 = __webpack_require__(18);
 	var dom_tokens_1 = __webpack_require__(76);
 	var event_manager_1 = __webpack_require__(46);
 	var dom_renderer_1 = __webpack_require__(212);
 	var shared_styles_host_1 = __webpack_require__(134);
-	var key_events_1 = __webpack_require__(310);
+	var key_events_1 = __webpack_require__(311);
 	var ng_probe_1 = __webpack_require__(133);
 	var dom_events_1 = __webpack_require__(213);
 	var hammer_gestures_1 = __webpack_require__(214);
 	var shared_styles_host_2 = __webpack_require__(134);
 	var animation_builder_1 = __webpack_require__(130);
 	var browser_details_1 = __webpack_require__(131);
-	var title_1 = __webpack_require__(305);
+	var title_1 = __webpack_require__(306);
 	exports.Title = title_1.Title;
 	var browser_adapter_2 = __webpack_require__(132);
 	exports.BrowserDomAdapter = browser_adapter_2.BrowserDomAdapter;
-	var tools_1 = __webpack_require__(307);
+	var tools_1 = __webpack_require__(308);
 	exports.enableDebugTools = tools_1.enableDebugTools;
 	exports.disableDebugTools = tools_1.disableDebugTools;
-	var by_1 = __webpack_require__(308);
+	var by_1 = __webpack_require__(309);
 	exports.By = by_1.By;
 	exports.BROWSER_PLATFORM_MARKER = 
 	/*@ts2dart_const*/ new core_1.OpaqueToken('BrowserPlatformMarker');
@@ -6351,7 +6351,7 @@ webpackJsonp([2],[
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(249));
+	__export(__webpack_require__(250));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
@@ -6506,7 +6506,7 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var lang_1 = __webpack_require__(3);
-	var promise_1 = __webpack_require__(254);
+	var promise_1 = __webpack_require__(255);
 	exports.PromiseWrapper = promise_1.PromiseWrapper;
 	exports.PromiseCompleter = promise_1.PromiseCompleter;
 	var Subject_1 = __webpack_require__(15);
@@ -6753,7 +6753,7 @@ webpackJsonp([2],[
 	var lang_1 = __webpack_require__(3);
 	var collection_1 = __webpack_require__(9);
 	var html_ast_1 = __webpack_require__(104);
-	var html_lexer_1 = __webpack_require__(255);
+	var html_lexer_1 = __webpack_require__(256);
 	var parse_util_1 = __webpack_require__(64);
 	var html_tags_1 = __webpack_require__(62);
 	var HtmlTreeError = (function (_super) {
@@ -7555,7 +7555,7 @@ webpackJsonp([2],[
 	var html_ast_1 = __webpack_require__(104);
 	var util_1 = __webpack_require__(33);
 	var identifiers_1 = __webpack_require__(23);
-	var provider_parser_1 = __webpack_require__(264);
+	var provider_parser_1 = __webpack_require__(265);
 	// Group 1 = "bind-"
 	// Group 2 = "var-"
 	// Group 3 = "let-"
@@ -8652,7 +8652,7 @@ webpackJsonp([2],[
 	};
 	var collection_1 = __webpack_require__(30);
 	var lang_1 = __webpack_require__(14);
-	var generic_browser_adapter_1 = __webpack_require__(302);
+	var generic_browser_adapter_1 = __webpack_require__(303);
 	var dom_adapter_1 = __webpack_require__(18);
 	var _attrToPropMap = {
 	    'class': 'className',
@@ -11277,9 +11277,9 @@ webpackJsonp([2],[
 	var directive_resolver_1 = __webpack_require__(102);
 	var pipe_resolver_1 = __webpack_require__(106);
 	var view_resolver_1 = __webpack_require__(111);
-	var directive_lifecycle_reflector_1 = __webpack_require__(253);
+	var directive_lifecycle_reflector_1 = __webpack_require__(254);
 	var util_1 = __webpack_require__(33);
-	var assertions_1 = __webpack_require__(251);
+	var assertions_1 = __webpack_require__(252);
 	var url_resolver_1 = __webpack_require__(41);
 	var core_private_2 = __webpack_require__(16);
 	var CompileMetadataResolver = (function () {
@@ -11697,9 +11697,9 @@ webpackJsonp([2],[
 	var metadata_resolver_1 = __webpack_require__(175);
 	var config_1 = __webpack_require__(61);
 	var ir = __webpack_require__(12);
-	var output_jit_1 = __webpack_require__(261);
-	var output_interpreter_1 = __webpack_require__(260);
-	var interpretive_view_1 = __webpack_require__(259);
+	var output_jit_1 = __webpack_require__(262);
+	var output_interpreter_1 = __webpack_require__(261);
+	var interpretive_view_1 = __webpack_require__(260);
 	var xhr_1 = __webpack_require__(112);
 	var RuntimeCompiler = (function () {
 	    function RuntimeCompiler(_metadataResolver, _templateNormalizer, _templateParser, _styleCompiler, _viewCompiler, _xhr, _genConfig) {
@@ -11864,7 +11864,7 @@ webpackJsonp([2],[
 	var core_1 = __webpack_require__(2);
 	var compile_metadata_1 = __webpack_require__(22);
 	var o = __webpack_require__(12);
-	var shadow_css_1 = __webpack_require__(266);
+	var shadow_css_1 = __webpack_require__(267);
 	var url_resolver_1 = __webpack_require__(41);
 	var style_url_resolver_1 = __webpack_require__(108);
 	var lang_1 = __webpack_require__(3);
@@ -12546,7 +12546,7 @@ webpackJsonp([2],[
 	var constants_1 = __webpack_require__(42);
 	var compile_query_1 = __webpack_require__(181);
 	var compile_method_1 = __webpack_require__(110);
-	var compile_pipe_1 = __webpack_require__(267);
+	var compile_pipe_1 = __webpack_require__(268);
 	var compile_metadata_1 = __webpack_require__(22);
 	var util_1 = __webpack_require__(50);
 	var identifiers_1 = __webpack_require__(23);
@@ -12948,8 +12948,8 @@ webpackJsonp([2],[
 	var core_1 = __webpack_require__(2);
 	var compile_element_1 = __webpack_require__(180);
 	var compile_view_1 = __webpack_require__(182);
-	var view_builder_1 = __webpack_require__(272);
-	var view_binder_1 = __webpack_require__(271);
+	var view_builder_1 = __webpack_require__(273);
+	var view_binder_1 = __webpack_require__(272);
 	var config_1 = __webpack_require__(61);
 	var ViewCompileResult = (function () {
 	    function ViewCompileResult(statements, viewFactoryVar, dependencies) {
@@ -13069,7 +13069,7 @@ webpackJsonp([2],[
 	"use strict";
 	var lang_1 = __webpack_require__(52);
 	var base_wrapped_exception_1 = __webpack_require__(206);
-	var collection_1 = __webpack_require__(296);
+	var collection_1 = __webpack_require__(297);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
 	        this.res = [];
@@ -13926,7 +13926,7 @@ webpackJsonp([2],[
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(14);
 	var exceptions_1 = __webpack_require__(135);
-	var hammer_common_1 = __webpack_require__(309);
+	var hammer_common_1 = __webpack_require__(310);
 	exports.HAMMER_GESTURE_CONFIG = 
 	/*@ts2dart_const*/ new core_1.OpaqueToken("HammerGestureConfig");
 	var HammerGestureConfig = (function () {
@@ -14217,8 +14217,8 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var url_sanitizer_1 = __webpack_require__(315);
-	var style_sanitizer_1 = __webpack_require__(314);
+	var url_sanitizer_1 = __webpack_require__(316);
+	var style_sanitizer_1 = __webpack_require__(315);
 	var core_private_1 = __webpack_require__(129);
 	exports.SecurityContext = core_private_1.SecurityContext;
 	var core_1 = __webpack_require__(2);
@@ -14394,7 +14394,8 @@ webpackJsonp([2],[
 /* 246 */,
 /* 247 */,
 /* 248 */,
-/* 249 */
+/* 249 */,
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14408,7 +14409,7 @@ webpackJsonp([2],[
 	*/
 	var element_schema_registry_1 = __webpack_require__(65);
 	exports.ElementSchemaRegistry = element_schema_registry_1.ElementSchemaRegistry;
-	var compiler_1 = __webpack_require__(252);
+	var compiler_1 = __webpack_require__(253);
 	exports.COMPILER_PROVIDERS = compiler_1.COMPILER_PROVIDERS;
 	exports.TEMPLATE_TRANSFORMS = compiler_1.TEMPLATE_TRANSFORMS;
 	exports.CompilerConfig = compiler_1.CompilerConfig;
@@ -14436,16 +14437,16 @@ webpackJsonp([2],[
 	exports.CompileDirectiveMetadata = compiler_1.CompileDirectiveMetadata;
 	exports.CompilePipeMetadata = compiler_1.CompilePipeMetadata;
 	__export(__webpack_require__(32));
-	__export(__webpack_require__(250));
+	__export(__webpack_require__(251));
 	//# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var selector = __webpack_require__(107);
-	var pathUtil = __webpack_require__(262);
+	var pathUtil = __webpack_require__(263);
 	var __compiler_private__;
 	(function (__compiler_private__) {
 	    __compiler_private__.SelectorMatcher = selector.SelectorMatcher;
@@ -14456,7 +14457,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14479,7 +14480,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=assertions.js.map
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14495,7 +14496,7 @@ webpackJsonp([2],[
 	exports.CompilerConfig = config_1.CompilerConfig;
 	exports.RenderTypes = config_1.RenderTypes;
 	__export(__webpack_require__(22));
-	__export(__webpack_require__(256));
+	__export(__webpack_require__(257));
 	var runtime_compiler_1 = __webpack_require__(176);
 	exports.RuntimeCompiler = runtime_compiler_1.RuntimeCompiler;
 	__export(__webpack_require__(41));
@@ -14515,7 +14516,7 @@ webpackJsonp([2],[
 	var config_2 = __webpack_require__(61);
 	var runtime_compiler_2 = __webpack_require__(176);
 	var element_schema_registry_1 = __webpack_require__(65);
-	var dom_element_schema_registry_1 = __webpack_require__(265);
+	var dom_element_schema_registry_1 = __webpack_require__(266);
 	var url_resolver_2 = __webpack_require__(41);
 	var parser_1 = __webpack_require__(172);
 	var lexer_1 = __webpack_require__(171);
@@ -14553,7 +14554,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14588,7 +14589,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=directive_lifecycle_reflector.js.map
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14642,7 +14643,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=promise.js.map
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15331,7 +15332,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=html_lexer.js.map
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15477,7 +15478,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=offline_compiler.js.map
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15647,7 +15648,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=abstract_js_emitter.js.map
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16033,7 +16034,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dart_emitter.js.map
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16122,7 +16123,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=interpretive_view.js.map
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16132,8 +16133,8 @@ webpackJsonp([2],[
 	var exceptions_1 = __webpack_require__(10);
 	var collection_1 = __webpack_require__(9);
 	var o = __webpack_require__(12);
-	var dart_emitter_1 = __webpack_require__(258);
-	var ts_emitter_1 = __webpack_require__(263);
+	var dart_emitter_1 = __webpack_require__(259);
+	var ts_emitter_1 = __webpack_require__(264);
 	function interpretStatements(statements, resultVar, instanceFactory) {
 	    var stmtsWithReturn = statements.concat([new o.ReturnStatement(o.variable(resultVar))]);
 	    var ctx = new _ExecutionContext(null, null, null, null, new Map(), new Map(), new Map(), new Map(), instanceFactory);
@@ -16561,7 +16562,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=output_interpreter.js.map
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16572,7 +16573,7 @@ webpackJsonp([2],[
 	};
 	var lang_1 = __webpack_require__(3);
 	var abstract_emitter_1 = __webpack_require__(63);
-	var abstract_js_emitter_1 = __webpack_require__(257);
+	var abstract_js_emitter_1 = __webpack_require__(258);
 	var util_1 = __webpack_require__(33);
 	function jitStatements(sourceUrl, statements, resultVar) {
 	    var converter = new JitEmitterVisitor();
@@ -16612,7 +16613,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=output_jit.js.map
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16653,7 +16654,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=path_util.js.map
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16992,7 +16993,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ts_emitter.js.map
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17374,7 +17375,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=provider_parser.js.map
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17672,7 +17673,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_element_schema_registry.js.map
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18176,7 +18177,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=shadow_css.js.map
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18280,7 +18281,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_pipe.js.map
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18419,7 +18420,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=event_binder.js.map
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18487,7 +18488,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=lifecycle_binder.js.map
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18680,15 +18681,15 @@ webpackJsonp([2],[
 	//# sourceMappingURL=property_binder.js.map
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var collection_1 = __webpack_require__(9);
 	var template_ast_1 = __webpack_require__(32);
-	var property_binder_1 = __webpack_require__(270);
-	var event_binder_1 = __webpack_require__(268);
-	var lifecycle_binder_1 = __webpack_require__(269);
+	var property_binder_1 = __webpack_require__(271);
+	var event_binder_1 = __webpack_require__(269);
+	var lifecycle_binder_1 = __webpack_require__(270);
 	function bindView(view, parsedTemplate) {
 	    var visitor = new ViewBinderVisitor(view);
 	    template_ast_1.templateVisitAll(visitor, parsedTemplate);
@@ -18762,7 +18763,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_binder.js.map
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19225,7 +19226,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_builder.js.map
 
 /***/ },
-/* 273 */,
 /* 274 */,
 /* 275 */,
 /* 276 */,
@@ -19245,7 +19245,8 @@ webpackJsonp([2],[
 /* 290 */,
 /* 291 */,
 /* 292 */,
-/* 293 */
+/* 293 */,
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19254,28 +19255,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=core_private.js.map
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(295));
+	__export(__webpack_require__(296));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var compiler_1 = __webpack_require__(101);
-	var xhr_cache_1 = __webpack_require__(298);
+	var xhr_cache_1 = __webpack_require__(299);
 	var lang_1 = __webpack_require__(52);
-	var xhr_impl_1 = __webpack_require__(299);
-	var platform_browser_1 = __webpack_require__(300);
+	var xhr_impl_1 = __webpack_require__(300);
+	var platform_browser_1 = __webpack_require__(301);
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(293);
+	var core_private_1 = __webpack_require__(294);
 	exports.CACHED_TEMPLATE_PROVIDER = 
 	/*@ts2dart_const*/ [{ provide: compiler_1.XHR, useClass: xhr_cache_1.CachedXHR }];
 	/**
@@ -19364,7 +19365,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_browser_dynamic.js.map
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19737,7 +19738,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19820,7 +19821,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19830,7 +19831,7 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var compiler_1 = __webpack_require__(101);
-	var exceptions_1 = __webpack_require__(297);
+	var exceptions_1 = __webpack_require__(298);
 	var lang_1 = __webpack_require__(52);
 	var promise_1 = __webpack_require__(208);
 	/**
@@ -19863,7 +19864,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=xhr_cache.js.map
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19914,18 +19915,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=xhr_impl.js.map
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(312));
+	__export(__webpack_require__(313));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19954,7 +19955,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20028,7 +20029,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=generic_browser_adapter.js.map
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20099,7 +20100,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser_platform_location.js.map
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20179,7 +20180,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=testability.js.map
 
 /***/ },
-/* 305 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20211,13 +20212,13 @@ webpackJsonp([2],[
 	//# sourceMappingURL=title.js.map
 
 /***/ },
-/* 306 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(14);
-	var browser_1 = __webpack_require__(311);
+	var browser_1 = __webpack_require__(312);
 	var dom_adapter_1 = __webpack_require__(18);
 	var ChangeDetectionPerfRecord = (function () {
 	    function ChangeDetectionPerfRecord(msPerTick, numTicks) {
@@ -20295,12 +20296,12 @@ webpackJsonp([2],[
 	//# sourceMappingURL=common_tools.js.map
 
 /***/ },
-/* 307 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var lang_1 = __webpack_require__(14);
-	var common_tools_1 = __webpack_require__(306);
+	var common_tools_1 = __webpack_require__(307);
 	var context = lang_1.global;
 	/**
 	 * Enabled Angular 2 debug tools that are accessible via your browser's
@@ -20327,7 +20328,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=tools.js.map
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20377,7 +20378,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=by.js.map
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20440,7 +20441,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=hammer_common.js.map
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20550,7 +20551,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=key_events.js.map
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20573,7 +20574,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20600,13 +20601,13 @@ webpackJsonp([2],[
 	exports.disableDebugTools = browser_common_2.disableDebugTools;
 	exports.HAMMER_GESTURE_CONFIG = browser_common_2.HAMMER_GESTURE_CONFIG;
 	exports.HammerGestureConfig = browser_common_2.HammerGestureConfig;
-	__export(__webpack_require__(301));
+	__export(__webpack_require__(302));
 	var dom_tokens_1 = __webpack_require__(76);
 	exports.DOCUMENT = dom_tokens_1.DOCUMENT;
 	var dom_sanitization_service_1 = __webpack_require__(219);
 	exports.DomSanitizationService = dom_sanitization_service_1.DomSanitizationService;
 	exports.SecurityContext = dom_sanitization_service_1.SecurityContext;
-	var platform_browser_static_1 = __webpack_require__(313);
+	var platform_browser_static_1 = __webpack_require__(314);
 	exports.bootstrapStatic = platform_browser_static_1.bootstrapStatic;
 	exports.browserStaticPlatform = platform_browser_static_1.browserStaticPlatform;
 	exports.BROWSER_APP_STATIC_PROVIDERS = platform_browser_static_1.BROWSER_APP_STATIC_PROVIDERS;
@@ -20621,7 +20622,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_browser.js.map
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20630,7 +20631,7 @@ webpackJsonp([2],[
 	var browser_common_1 = __webpack_require__(75);
 	var ng_probe_1 = __webpack_require__(133);
 	exports.ELEMENT_PROBE_PROVIDERS = ng_probe_1.ELEMENT_PROBE_PROVIDERS;
-	var browser_platform_location_1 = __webpack_require__(303);
+	var browser_platform_location_1 = __webpack_require__(304);
 	exports.BrowserPlatformLocation = browser_platform_location_1.BrowserPlatformLocation;
 	var browser_common_2 = __webpack_require__(75);
 	exports.BROWSER_PROVIDERS = browser_common_2.BROWSER_PROVIDERS;
@@ -20668,7 +20669,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_browser_static.js.map
 
 /***/ },
-/* 314 */
+/* 315 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20719,7 +20720,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=style_sanitizer.js.map
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20759,7 +20760,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=url_sanitizer.js.map
 
 /***/ },
-/* 316 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20781,7 +20782,7 @@ webpackJsonp([2],[
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = __webpack_require__(320);
+	var template = __webpack_require__(329);
 	
 	var DemoApp = exports.DemoApp = (_dec = (0, _core.Component)({
 	    selector: 'demo-app',
@@ -20790,77 +20791,55 @@ webpackJsonp([2],[
 	    pipes: [_chomskyNg.TranslatePipe]
 	}), _dec(_class = function () {
 	    function DemoApp(translateService) {
-	        var _this = this;
-	
 	        _classCallCheck(this, DemoApp);
 	
 	        // Local instance
 	        this.translateService = translateService;
-	        // Sample english translation
-	        var enTranslation = {
-	            greeting: 'Hello!',
-	            farewell: 'Goodbye, {name}.',
-	            today: 'Today is {today:date}.',
-	            debt: 'You owe: {balance:currency}',
-	            messages: {
-	                zero: 'You have no messages.',
-	                1: 'You have {count:number} message.',
-	                20: 'You have {count:number:0.00} messages.',
-	                many: 'You have {count:number} messages.'
-	            }
-	        };
-	
+	        // Locales
 	        this.usLocale = 'en-US';
 	        this.frLocale = 'fr-FR';
 	        this.ruLocale = 'ru-RU';
-	
-	        // HTTP Load es
-	        Promise.all([this.translateService.setLanguage(this.frLocale, './../../i18n/fr-FR.json'), this.translateService.setLanguage(this.ruLocale, './../../i18n/ru-RU.json')]).then(function () {
-	            // Object Load English
-	            _this.translateService.setLanguage(_this.usLocale, enTranslation);
+	        // Listen for changes
+	        this.translateService.onLocaleChange.subscribe(function (locale) {
+	            console.log('[Language Change]: ' + locale); // eslint-disable-line
 	        });
+	        // Use en-US
+	        this.translateService.use(this.usLocale);
 	
 	        // Variable for today
 	        this.localToday = new Date();
-	
 	        this.greeting = 'greeting';
-	
 	        this.demoVariables = {
 	            today: new Date(),
 	            name: 'Jane',
 	            balance: 9874.34
 	        };
-	
-	        this.changeLanguage(this.usLocale);
 	    }
 	
 	    _createClass(DemoApp, [{
-	        key: 'getDictionary',
-	        value: function getDictionary(languageKey) {
-	            var languageCode = (languageKey.split('-')[0] || '').toLowerCase();
-	            var variantCode = (languageKey.split('-')[1] || '').toUpperCase();
-	            return this.translateService.dictionaryManager.dictionaries[languageCode][variantCode];
-	        }
-	    }, {
 	        key: 'changeLanguage',
-	        value: function changeLanguage(language) {
-	            this.currentLanguage = language;
-	            this.translateService.setLanguage(language);
+	        value: function changeLanguage(locale) {
+	            this.currentLocale = locale;
+	            this.translateService.use(locale);
 	        }
 	    }]);
 	
 	    return DemoApp;
 	}()) || _class);
 	Reflect.defineMetadata('design:paramtypes', [_chomskyNg.TranslateService], DemoApp);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvYXBwL0FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUVBOzs7O0FBRUEsSUFBTSxXQUFXLFFBQVEsWUFBUixDQUFqQjs7SUFhYSxPLFdBQUEsTyxXQVhaLHFCQUFVO0FBQ1AsY0FBVSxVQURIO0FBRVAsY0FBVSxRQUZIO0FBR1AsZ0JBQVksK0NBSEw7QUFPUCxXQUFPO0FBUEEsQ0FBVixDO0FBWUcscUJBQVksZ0JBQVosRUFBK0M7QUFBQTs7QUFBQTs7O0FBRTNDLGFBQUssZ0JBQUwsR0FBd0IsZ0JBQXhCOztBQUVBLFlBQUksZ0JBQWdCO0FBQ2hCLHNCQUFVLFFBRE07QUFFaEIsc0JBQVUsa0JBRk07QUFHaEIsbUJBQU8sd0JBSFM7QUFJaEIsa0JBQU0sNkJBSlU7QUFLaEIsc0JBQVU7QUFDTixzQkFBTSx1QkFEQTtBQUVOLG1CQUFHLGtDQUZHO0FBR04sb0JBQUksd0NBSEU7QUFJTixzQkFBTTtBQUpBO0FBTE0sU0FBcEI7O0FBYUEsYUFBSyxRQUFMLEdBQWdCLE9BQWhCO0FBQ0EsYUFBSyxRQUFMLEdBQWdCLE9BQWhCO0FBQ0EsYUFBSyxRQUFMLEdBQWdCLE9BQWhCOzs7QUFHQSxnQkFBUSxHQUFSLENBQVksQ0FDUixLQUFLLGdCQUFMLENBQXNCLFdBQXRCLENBQWtDLEtBQUssUUFBdkMsRUFBaUQseUJBQWpELENBRFEsRUFFUixLQUFLLGdCQUFMLENBQXNCLFdBQXRCLENBQWtDLEtBQUssUUFBdkMsRUFBaUQseUJBQWpELENBRlEsQ0FBWixFQUlLLElBSkwsQ0FJVSxZQUFNOztBQUVSLGtCQUFLLGdCQUFMLENBQXNCLFdBQXRCLENBQWtDLE1BQUssUUFBdkMsRUFBaUQsYUFBakQ7QUFDSCxTQVBMOzs7QUFVQSxhQUFLLFVBQUwsR0FBa0IsSUFBSSxJQUFKLEVBQWxCOztBQUVBLGFBQUssUUFBTCxHQUFnQixVQUFoQjs7QUFFQSxhQUFLLGFBQUwsR0FBcUI7QUFDakIsbUJBQU8sSUFBSSxJQUFKLEVBRFU7QUFFakIsa0JBQU0sTUFGVztBQUdqQixxQkFBUztBQUhRLFNBQXJCOztBQU1BLGFBQUssY0FBTCxDQUFvQixLQUFLLFFBQXpCO0FBQ0g7Ozs7c0NBRWEsVyxFQUFhO0FBQ3ZCLGdCQUFJLGVBQWUsQ0FBQyxZQUFZLEtBQVosQ0FBa0IsR0FBbEIsRUFBdUIsQ0FBdkIsS0FBNkIsRUFBOUIsRUFBa0MsV0FBbEMsRUFBbkI7QUFDQSxnQkFBSSxjQUFjLENBQUMsWUFBWSxLQUFaLENBQWtCLEdBQWxCLEVBQXVCLENBQXZCLEtBQTZCLEVBQTlCLEVBQWtDLFdBQWxDLEVBQWxCO0FBQ0EsbUJBQU8sS0FBSyxnQkFBTCxDQUFzQixpQkFBdEIsQ0FBd0MsWUFBeEMsQ0FBcUQsWUFBckQsRUFBbUUsV0FBbkUsQ0FBUDtBQUNIOzs7dUNBRWMsUSxFQUFVO0FBQ3JCLGlCQUFLLGVBQUwsR0FBdUIsUUFBdkI7QUFDQSxpQkFBSyxnQkFBTCxDQUFzQixXQUF0QixDQUFrQyxRQUFsQztBQUNIOzs7OzsyRUF2RFEsTyIsImZpbGUiOiJBcHAuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL2JoL25vdm8vdG9vbHMvY2hvbXNreS1uZzIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENPUkVfRElSRUNUSVZFUyB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XG5cbmltcG9ydCB7IFRyYW5zbGF0ZVBpcGUsIFRyYW5zbGF0ZSwgVHJhbnNsYXRlU2VydmljZSB9IGZyb20gJy4vLi4vLi4vLi4vc3JjL2Nob21za3ktbmcyJztcblxuY29uc3QgdGVtcGxhdGUgPSByZXF1aXJlKCcuL0FwcC5odG1sJyk7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnZGVtby1hcHAnLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZSxcbiAgICBkaXJlY3RpdmVzOiBbXG4gICAgICAgIENPUkVfRElSRUNUSVZFUyxcbiAgICAgICAgVHJhbnNsYXRlXG4gICAgXSxcbiAgICBwaXBlczogW1xuICAgICAgICBUcmFuc2xhdGVQaXBlXG4gICAgXVxufSlcbmV4cG9ydCBjbGFzcyBEZW1vQXBwIHtcbiAgICBjb25zdHJ1Y3Rvcih0cmFuc2xhdGVTZXJ2aWNlOlRyYW5zbGF0ZVNlcnZpY2UpIHtcbiAgICAgICAgLy8gTG9jYWwgaW5zdGFuY2VcbiAgICAgICAgdGhpcy50cmFuc2xhdGVTZXJ2aWNlID0gdHJhbnNsYXRlU2VydmljZTtcbiAgICAgICAgLy8gU2FtcGxlIGVuZ2xpc2ggdHJhbnNsYXRpb25cbiAgICAgICAgbGV0IGVuVHJhbnNsYXRpb24gPSB7XG4gICAgICAgICAgICBncmVldGluZzogJ0hlbGxvIScsXG4gICAgICAgICAgICBmYXJld2VsbDogJ0dvb2RieWUsIHtuYW1lfS4nLFxuICAgICAgICAgICAgdG9kYXk6ICdUb2RheSBpcyB7dG9kYXk6ZGF0ZX0uJyxcbiAgICAgICAgICAgIGRlYnQ6ICdZb3Ugb3dlOiB7YmFsYW5jZTpjdXJyZW5jeX0nLFxuICAgICAgICAgICAgbWVzc2FnZXM6IHtcbiAgICAgICAgICAgICAgICB6ZXJvOiAnWW91IGhhdmUgbm8gbWVzc2FnZXMuJyxcbiAgICAgICAgICAgICAgICAxOiAnWW91IGhhdmUge2NvdW50Om51bWJlcn0gbWVzc2FnZS4nLFxuICAgICAgICAgICAgICAgIDIwOiAnWW91IGhhdmUge2NvdW50Om51bWJlcjowLjAwfSBtZXNzYWdlcy4nLFxuICAgICAgICAgICAgICAgIG1hbnk6ICdZb3UgaGF2ZSB7Y291bnQ6bnVtYmVyfSBtZXNzYWdlcy4nXG4gICAgICAgICAgICB9XG4gICAgICAgIH07XG5cbiAgICAgICAgdGhpcy51c0xvY2FsZSA9ICdlbi1VUyc7XG4gICAgICAgIHRoaXMuZnJMb2NhbGUgPSAnZnItRlInO1xuICAgICAgICB0aGlzLnJ1TG9jYWxlID0gJ3J1LVJVJztcblxuICAgICAgICAvLyBIVFRQIExvYWQgZXNcbiAgICAgICAgUHJvbWlzZS5hbGwoW1xuICAgICAgICAgICAgdGhpcy50cmFuc2xhdGVTZXJ2aWNlLnNldExhbmd1YWdlKHRoaXMuZnJMb2NhbGUsICcuLy4uLy4uL2kxOG4vZnItRlIuanNvbicpLFxuICAgICAgICAgICAgdGhpcy50cmFuc2xhdGVTZXJ2aWNlLnNldExhbmd1YWdlKHRoaXMucnVMb2NhbGUsICcuLy4uLy4uL2kxOG4vcnUtUlUuanNvbicpXG4gICAgICAgIF0pXG4gICAgICAgICAgICAudGhlbigoKSA9PiB7XG4gICAgICAgICAgICAgICAgLy8gT2JqZWN0IExvYWQgRW5nbGlzaFxuICAgICAgICAgICAgICAgIHRoaXMudHJhbnNsYXRlU2VydmljZS5zZXRMYW5ndWFnZSh0aGlzLnVzTG9jYWxlLCBlblRyYW5zbGF0aW9uKTtcbiAgICAgICAgICAgIH0pO1xuXG4gICAgICAgIC8vIFZhcmlhYmxlIGZvciB0b2RheVxuICAgICAgICB0aGlzLmxvY2FsVG9kYXkgPSBuZXcgRGF0ZSgpO1xuXG4gICAgICAgIHRoaXMuZ3JlZXRpbmcgPSAnZ3JlZXRpbmcnO1xuXG4gICAgICAgIHRoaXMuZGVtb1ZhcmlhYmxlcyA9IHtcbiAgICAgICAgICAgIHRvZGF5OiBuZXcgRGF0ZSgpLFxuICAgICAgICAgICAgbmFtZTogJ0phbmUnLFxuICAgICAgICAgICAgYmFsYW5jZTogOTg3NC4zNFxuICAgICAgICB9O1xuXG4gICAgICAgIHRoaXMuY2hhbmdlTGFuZ3VhZ2UodGhpcy51c0xvY2FsZSk7XG4gICAgfVxuXG4gICAgZ2V0RGljdGlvbmFyeShsYW5ndWFnZUtleSkge1xuICAgICAgICBsZXQgbGFuZ3VhZ2VDb2RlID0gKGxhbmd1YWdlS2V5LnNwbGl0KCctJylbMF0gfHwgJycpLnRvTG93ZXJDYXNlKCk7XG4gICAgICAgIGxldCB2YXJpYW50Q29kZSA9IChsYW5ndWFnZUtleS5zcGxpdCgnLScpWzFdIHx8ICcnKS50b1VwcGVyQ2FzZSgpO1xuICAgICAgICByZXR1cm4gdGhpcy50cmFuc2xhdGVTZXJ2aWNlLmRpY3Rpb25hcnlNYW5hZ2VyLmRpY3Rpb25hcmllc1tsYW5ndWFnZUNvZGVdW3ZhcmlhbnRDb2RlXTtcbiAgICB9XG5cbiAgICBjaGFuZ2VMYW5ndWFnZShsYW5ndWFnZSkge1xuICAgICAgICB0aGlzLmN1cnJlbnRMYW5ndWFnZSA9IGxhbmd1YWdlO1xuICAgICAgICB0aGlzLnRyYW5zbGF0ZVNlcnZpY2Uuc2V0TGFuZ3VhZ2UobGFuZ3VhZ2UpO1xuICAgIH1cbn1cbiJdfQ==
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvYXBwL0FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUVBOzs7O0FBRUEsSUFBTSxXQUFXLFFBQVEsWUFBUixDQUFqQjs7SUFhYSxPLFdBQUEsTyxXQVhaLHFCQUFVO0FBQ1AsY0FBVSxVQURIO0FBRVAsY0FBVSxRQUZIO0FBR1AsZ0JBQVksK0NBSEw7QUFPUCxXQUFPO0FBUEEsQ0FBVixDO0FBWUcscUJBQVksZ0JBQVosRUFBK0M7QUFBQTs7O0FBRTNDLGFBQUssZ0JBQUwsR0FBd0IsZ0JBQXhCOztBQUVBLGFBQUssUUFBTCxHQUFnQixPQUFoQjtBQUNBLGFBQUssUUFBTCxHQUFnQixPQUFoQjtBQUNBLGFBQUssUUFBTCxHQUFnQixPQUFoQjs7QUFFQSxhQUFLLGdCQUFMLENBQXNCLGNBQXRCLENBQXFDLFNBQXJDLENBQStDLGtCQUFVO0FBQ3JELG9CQUFRLEdBQVIseUJBQWtDLE1BQWxDLEU7QUFDSCxTQUZEOztBQUlBLGFBQUssZ0JBQUwsQ0FBc0IsR0FBdEIsQ0FBMEIsS0FBSyxRQUEvQjs7O0FBR0EsYUFBSyxVQUFMLEdBQWtCLElBQUksSUFBSixFQUFsQjtBQUNBLGFBQUssUUFBTCxHQUFnQixVQUFoQjtBQUNBLGFBQUssYUFBTCxHQUFxQjtBQUNqQixtQkFBTyxJQUFJLElBQUosRUFEVTtBQUVqQixrQkFBTSxNQUZXO0FBR2pCLHFCQUFTO0FBSFEsU0FBckI7QUFLSDs7Ozt1Q0FFYyxNLEVBQVE7QUFDbkIsaUJBQUssYUFBTCxHQUFxQixNQUFyQjtBQUNBLGlCQUFLLGdCQUFMLENBQXNCLEdBQXRCLENBQTBCLE1BQTFCO0FBQ0g7Ozs7OzJFQTVCUSxPIiwiZmlsZSI6IkFwcC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvbm92by1kZXYvdG9vbHMvY2hvbXNreS1uZzIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENPUkVfRElSRUNUSVZFUyB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XG5cbmltcG9ydCB7IFRyYW5zbGF0ZVBpcGUsIFRyYW5zbGF0ZSwgVHJhbnNsYXRlU2VydmljZSB9IGZyb20gJy4vLi4vLi4vLi4vc3JjL2Nob21za3ktbmcyJztcblxuY29uc3QgdGVtcGxhdGUgPSByZXF1aXJlKCcuL0FwcC5odG1sJyk7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnZGVtby1hcHAnLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZSxcbiAgICBkaXJlY3RpdmVzOiBbXG4gICAgICAgIENPUkVfRElSRUNUSVZFUyxcbiAgICAgICAgVHJhbnNsYXRlXG4gICAgXSxcbiAgICBwaXBlczogW1xuICAgICAgICBUcmFuc2xhdGVQaXBlXG4gICAgXVxufSlcbmV4cG9ydCBjbGFzcyBEZW1vQXBwIHtcbiAgICBjb25zdHJ1Y3Rvcih0cmFuc2xhdGVTZXJ2aWNlOlRyYW5zbGF0ZVNlcnZpY2UpIHtcbiAgICAgICAgLy8gTG9jYWwgaW5zdGFuY2VcbiAgICAgICAgdGhpcy50cmFuc2xhdGVTZXJ2aWNlID0gdHJhbnNsYXRlU2VydmljZTtcbiAgICAgICAgLy8gTG9jYWxlc1xuICAgICAgICB0aGlzLnVzTG9jYWxlID0gJ2VuLVVTJztcbiAgICAgICAgdGhpcy5mckxvY2FsZSA9ICdmci1GUic7XG4gICAgICAgIHRoaXMucnVMb2NhbGUgPSAncnUtUlUnO1xuICAgICAgICAvLyBMaXN0ZW4gZm9yIGNoYW5nZXNcbiAgICAgICAgdGhpcy50cmFuc2xhdGVTZXJ2aWNlLm9uTG9jYWxlQ2hhbmdlLnN1YnNjcmliZShsb2NhbGUgPT4ge1xuICAgICAgICAgICAgY29uc29sZS5sb2coYFtMYW5ndWFnZSBDaGFuZ2VdOiAke2xvY2FsZX1gKTsgLy8gZXNsaW50LWRpc2FibGUtbGluZVxuICAgICAgICB9KTtcbiAgICAgICAgLy8gVXNlIGVuLVVTXG4gICAgICAgIHRoaXMudHJhbnNsYXRlU2VydmljZS51c2UodGhpcy51c0xvY2FsZSk7XG5cbiAgICAgICAgLy8gVmFyaWFibGUgZm9yIHRvZGF5XG4gICAgICAgIHRoaXMubG9jYWxUb2RheSA9IG5ldyBEYXRlKCk7XG4gICAgICAgIHRoaXMuZ3JlZXRpbmcgPSAnZ3JlZXRpbmcnO1xuICAgICAgICB0aGlzLmRlbW9WYXJpYWJsZXMgPSB7XG4gICAgICAgICAgICB0b2RheTogbmV3IERhdGUoKSxcbiAgICAgICAgICAgIG5hbWU6ICdKYW5lJyxcbiAgICAgICAgICAgIGJhbGFuY2U6IDk4NzQuMzRcbiAgICAgICAgfTtcbiAgICB9XG5cbiAgICBjaGFuZ2VMYW5ndWFnZShsb2NhbGUpIHtcbiAgICAgICAgdGhpcy5jdXJyZW50TG9jYWxlID0gbG9jYWxlO1xuICAgICAgICB0aGlzLnRyYW5zbGF0ZVNlcnZpY2UudXNlKGxvY2FsZSk7XG4gICAgfVxufVxuIl19
 
 /***/ },
-/* 317 */,
 /* 318 */,
-/* 319 */
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(547)();
+	exports = module.exports = __webpack_require__(325)();
 	// imports
 	
 	
@@ -20871,21 +20850,71 @@ webpackJsonp([2],[
 
 
 /***/ },
-/* 320 */
+/* 325 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">\n    <!-- MAIN HEADER -->\n    <section class=\"row\">\n        <div class=\"col-xs-12 text-center\">\n            <h1>Chomsky NG2 Demo</h1>\n            <p>Avram Noam Chomsky (/ˈnoʊm ˈtʃɒmski/; born December 7, 1928) is an American linguist, philosopher, cognitive scientist, historian, logician, social critic, and political activist. Sometimes described as \"the father of modern linguistics,\" Chomsky is also a major figure in analytic philosophy, and one of the founders of the field of cognitive science. He has spent more than half a century at the Massachusetts Institute of Technology (MIT), where he is Institute Professor Emeritus, and is the author of over 100 books on topics such as linguistics, war, politics, and mass media. Ideologically, he aligns with anarcho-syndicalism and libertarian socialism.</p>\n        </div>\n    </section>\n    <!-- CHOOSE LANGUAGE -->\n    <section class=\"row\">\n        <div class=\"col-xs-12 text-center\">\n            <h3 class=\"text-muted\">Select A Language:</h3>\n            <div class=\"btn-group\" role=\"group\">\n                <button type=\"button\" (click)=\"changeLanguage(usLocale)\" [class.active]=\"currentLanguage === usLocale\" class=\"btn btn-primary\">English</button>\n                <button type=\"button\" (click)=\"changeLanguage(ruLocale)\" [class.active]=\"currentLanguage === ruLocale\" class=\"btn btn-primary\">Russian</button>\n                <button type=\"button\" (click)=\"changeLanguage(frLocale)\" [class.active]=\"currentLanguage === frLocale\" class=\"btn btn-primary\">French</button>\n            </div>\n        </div>\n    </section>\n    <div class=\"clear-fix\">&nbsp;</div>\n    <!-- PIPE & DIRECTIVE -->\n    <section class=\"row\">\n        <!-- PIPE -->\n        <div class=\"col-xs-12 col-md-3\">\n            <h2>Pipe</h2>\n            <br>\n            <p><strong>Simple Text</strong></p>\n            <p>{{ 'greeting' | translate }}</p>\n            <p><strong>Variable</strong></p>\n            <p>{{ 'farewell' | translate:{ name: 'John' } }}</p>\n            <p><strong>Variable Date</strong></p>\n            <p>{{ 'today' | translate:{ today: localToday } }}</p>\n            <p><strong>Pluralized Number</strong></p>\n            <p>{{ 'messages' | translate:0 }}</p>\n            <p>{{ 'messages' | translate:1 }}</p>\n            <p>{{ 'messages' | translate:20 }}</p>\n            <p>{{ 'messages' | translate:125 }}</p>\n            <p><strong>Variable Currency</strong></p>\n            <p>{{ 'debt' | translate:{ balance: demoVariables.balance } }}</p>\n        </div>\n        <!-- DIRECTIVE -->\n        <div class=\"col-xs-12 col-md-3\">\n            <h2>Directive</h2>\n            <br>\n            <p><strong>Simple Text</strong></p>\n            <p [translate]=\"'greeting'\"></p>\n            <p><strong>Variable</strong></p>\n            <p [translate]=\"'farewell'\" [dynamicValues]=\"demoVariables\"></p>\n            <p><strong>Variable Date</strong></p>\n            <p [translate]=\"'today'\" [dynamicValues]=\"demoVariables\"></p>\n            <p><strong>Pluralized Number</strong></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"0\"></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"1\"></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"20\"></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"125\"></p>\n            <p><strong>Variable Currency</strong></p>\n            <p [translate]=\"'debt'\" [dynamicValues]=\"demoVariables\"></p>\n        </div>\n        <!-- JSON -->\n        <div class=\"col-xs-12 col-md-6\">\n            <h2>JSON</h2>\n            <br>\n            <pre>{{ getDictionary(currentLanguage) | json }}</pre>\n        </div>\n    </section>\n</div>\n"
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+	
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+	
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
 
 /***/ },
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
 /* 326 */,
 /* 327 */,
 /* 328 */,
-/* 329 */,
+/* 329 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"container\">\n    <!-- MAIN HEADER -->\n    <section class=\"row\">\n        <div class=\"col-xs-12 text-center\">\n            <h1>Chomsky NG2 Demo</h1>\n            <p>Avram Noam Chomsky (/ˈnoʊm ˈtʃɒmski/; born December 7, 1928) is an American linguist, philosopher, cognitive scientist, historian, logician, social critic, and political activist. Sometimes described as \"the father of modern linguistics,\" Chomsky is also a major figure in analytic philosophy, and one of the founders of the field of cognitive science. He has spent more than half a century at the Massachusetts Institute of Technology (MIT), where he is Institute Professor Emeritus, and is the author of over 100 books on topics such as linguistics, war, politics, and mass media. Ideologically, he aligns with anarcho-syndicalism and libertarian socialism.</p>\n        </div>\n    </section>\n    <!-- CHOOSE LANGUAGE -->\n    <section class=\"row\">\n        <div class=\"col-xs-12 text-center\">\n            <h3 class=\"text-muted\">Select A Language:</h3>\n            <div class=\"btn-group\" role=\"group\">\n                <button type=\"button\" (click)=\"changeLanguage(usLocale)\" [class.active]=\"currentLanguage === usLocale\" class=\"btn btn-primary\">English</button>\n                <button type=\"button\" (click)=\"changeLanguage(ruLocale)\" [class.active]=\"currentLanguage === ruLocale\" class=\"btn btn-primary\">Russian</button>\n                <button type=\"button\" (click)=\"changeLanguage(frLocale)\" [class.active]=\"currentLanguage === frLocale\" class=\"btn btn-primary\">French</button>\n            </div>\n        </div>\n    </section>\n    <div class=\"clear-fix\">&nbsp;</div>\n    <!-- PIPE & DIRECTIVE -->\n    <section class=\"row\">\n        <!-- PIPE -->\n        <div class=\"col-xs-12 col-md-3\">\n            <h2>Pipe</h2>\n            <br>\n            <p><strong>Simple Text</strong></p>\n            <p>{{ 'greeting' | translate }}</p>\n            <p><strong>Variable</strong></p>\n            <p>{{ 'farewell' | translate:{ name: 'John' } }}</p>\n            <p><strong>Variable Date</strong></p>\n            <p>{{ 'today' | translate:{ today: localToday } }}</p>\n            <p><strong>Pluralized Number</strong></p>\n            <p>{{ 'messages' | translate:0 }}</p>\n            <p>{{ 'messages' | translate:1 }}</p>\n            <p>{{ 'messages' | translate:20 }}</p>\n            <p>{{ 'messages' | translate:125 }}</p>\n            <p><strong>Variable Currency</strong></p>\n            <p>{{ 'debt' | translate:{ balance: demoVariables.balance } }}</p>\n        </div>\n        <!-- DIRECTIVE -->\n        <div class=\"col-xs-12 col-md-3\">\n            <h2>Directive</h2>\n            <br>\n            <p><strong>Simple Text</strong></p>\n            <p [translate]=\"'greeting'\"></p>\n            <p><strong>Variable</strong></p>\n            <p [translate]=\"'farewell'\" [dynamicValues]=\"demoVariables\"></p>\n            <p><strong>Variable Date</strong></p>\n            <p [translate]=\"'today'\" [dynamicValues]=\"demoVariables\"></p>\n            <p><strong>Pluralized Number</strong></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"0\"></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"1\"></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"20\"></p>\n            <p [translate]=\"'messages'\" [dynamicValues]=\"125\"></p>\n            <p><strong>Variable Currency</strong></p>\n            <p [translate]=\"'debt'\" [dynamicValues]=\"demoVariables\"></p>\n        </div>\n        <!-- JSON -->\n        <div class=\"col-xs-12 col-md-6\">\n            <h2>JSON</h2>\n            <br>\n            <pre>{{ translateService.dictionaryManager.dictionaries[currentLocale] | json }}</pre>\n        </div>\n    </section>\n</div>\n"
+
+/***/ },
 /* 330 */,
 /* 331 */,
 /* 332 */,
@@ -21103,62 +21132,7 @@ webpackJsonp([2],[
 /* 544 */,
 /* 545 */,
 /* 546 */,
-/* 547 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
+/* 547 */,
 /* 548 */,
 /* 549 */,
 /* 550 */,
@@ -21415,14 +21389,13 @@ webpackJsonp([2],[
 
 
 /***/ },
-/* 553 */,
-/* 554 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(319);
+	var content = __webpack_require__(324);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(552)(content, {});
@@ -21443,4 +21416,4 @@ webpackJsonp([2],[
 
 /***/ }
 ]);
-//# sourceMappingURL=demo.f437513b6672c7b706e6.bundle.map
+//# sourceMappingURL=demo.520969f41108dfd3e14c.bundle.map
