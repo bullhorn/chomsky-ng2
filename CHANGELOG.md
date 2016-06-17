@@ -1,3 +1,13 @@
+<a name="1.0.11"></a>
+## [1.0.11](https://github.com/bullhorn/chomsky-ng2/compare/v1.0.9...v1.0.11) (2016-06-17)
+
+
+### Features
+
+* **observables:** More support around observables for Chomsky ([09e3ccd](https://github.com/bullhorn/chomsky-ng2/commit/09e3ccd))
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/bullhorn/chomsky-ng2/compare/v1.0.8...v1.0.9) (2016-05-19)
 
