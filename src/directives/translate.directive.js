@@ -1,5 +1,6 @@
+// NG2
 import { ElementRef, Directive } from '@angular/core';
-
+// APP
 import { TranslateService } from '../services/translate.service';
 
 @Directive({

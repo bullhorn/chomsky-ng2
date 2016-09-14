@@ -1,5 +1,5 @@
-describe('Directive: Translate', () => {
-    it('TODO', () => {
-        expect(true).toBe(true);
-    });
-});
+// describe('Directive: Translate', () => {
+//     it('TODO', () => {
+//         expect(true).toBe(true);
+//     });
+// });

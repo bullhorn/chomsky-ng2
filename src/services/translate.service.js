@@ -1,10 +1,5 @@
-import { Injectable, Provider } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Chomsky } from 'chomsky/lib/chomsky';
 
 @Injectable()
-export class TranslateService extends Chomsky {
-}
-
-export const TRANSLATE_PROVIDERS = [
-    new Provider(TranslateService, { useClass: TranslateService })
-];
+export class TranslateService extends Chomsky {}

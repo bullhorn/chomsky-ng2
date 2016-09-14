@@ -1,20 +1,12 @@
+// NG2
 import { Component } from '@angular/core';
-import { CORE_DIRECTIVES } from '@angular/common';
-
-import { TranslatePipe, Translate, TranslateService } from './../../../src/chomsky-ng2';
-
+// App
+import { TranslateService } from './../../../src/chomsky-ng2';
 const template = require('./App.html');
 
 @Component({
     selector: 'demo-app',
-    template: template,
-    directives: [
-        CORE_DIRECTIVES,
-        Translate
-    ],
-    pipes: [
-        TranslatePipe
-    ]
+    template: template
 })
 export class DemoApp {
     constructor(translateService:TranslateService) {
@@ -30,7 +22,7 @@ export class DemoApp {
         });
         // Use en-US
         this.translateService.use(this.usLocale);
-
+        // TODO: log out a replayed var if null and then the value is fulfilled.
         // Variable for today
         this.localToday = new Date();
         this.greeting = 'greeting';
