@@ -3869,9 +3869,8 @@ webpackJsonp([1],[
 	            var _this = this;
 	
 	            var value = this._getValue(key);
-	
 	            // Handle pluralization
-	            if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
+	            if (value && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
 	                if (typeof interpolation === 'number') {
 	                    var pluralization = value;
 	                    if (pluralization) {
@@ -13758,4 +13757,4 @@ webpackJsonp([1],[
 
 /***/ }
 ]);
-//# sourceMappingURL=lib.4b196e42acab840b3d02.bundle.map
+//# sourceMappingURL=lib.e859fdc5aeec40549239.bundle.map
