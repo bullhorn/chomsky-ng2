@@ -1,6 +1,6 @@
 {
   "name": "chomsky-ng2",
-  "version": "1.0.11",
+  "version": "1.2.0",
   "description": "An Angular 2 module that leverages Chomsky for i18n.",
   "scripts": {
     "clean": "./node_modules/.bin/del bundles coverage lib dist",
@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/bullhorn/chomsky-ng2",
   "dependencies": {
-    "chomsky": "~1.0.0"
+    "chomsky": "~1.1.0"
   },
   "devDependencies": {
     "@angular/http": "2.0.0-rc.5",
