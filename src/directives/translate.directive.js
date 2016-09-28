@@ -28,6 +28,7 @@ export class Translate {
     }
 
     renderContent(key, interpolation) {
+        // TODO: work with HTML (& NG2's HTML sanitation)
         this.element.nativeElement.innerHTML = this.translateService.translate(key, interpolation);
     }
 }
