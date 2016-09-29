@@ -2,12 +2,31 @@
   "greeting": "Hello!",
   "farewell": "Goodbye, {name}.",
   "today": "Today is {today:date}.",
+  "formatToday": "Today is {today:date:llll}.",
+  "alert": "You have {count:number:0.00} message.",
   "debt": "You owe: {balance:currency}",
   "messages": {
     "zero": "You have no messages.",
     "1": "You have {count:number} message.",
     "20": "You have {count:number:0.00} messages.",
     "many": "You have {count:number} messages."
+  },
+  "candidate": {
+    "male": {
+      "zero": "{host} has no {candidate} and he is sad.",
+      "1": "{host} has one {candidate} and he is excited.",
+      "many": "{host} has some {candidate} and he's ecstatic."
+    },
+    "female": {
+      "zero": "{host} has no {candidate} and she is sad.",
+      "1": "{host} has one {candidate} and she is excited.",
+      "many": "{host} has some {candidate} and she's ecstatic."
+    },
+    "other": {
+      "zero": "{host} have no {candidate} and they are sad.",
+      "1": "{host} have one {candidate} and they are excited.",
+      "many": "{host} have some {candidate} and they are ecstatic."
+    }
   }
 }
 

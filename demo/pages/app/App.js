@@ -2,11 +2,10 @@
 import { Component } from '@angular/core';
 // App
 import { TranslateService } from './../../../src/chomsky-ng2';
-const template = require('./App.html');
 
 @Component({
     selector: 'demo-app',
-    template: template
+    template: require('./App.html')
 })
 export class DemoApp {
     constructor(translateService:TranslateService) {
@@ -20,8 +19,6 @@ export class DemoApp {
         this.translateService.onLocaleChange.subscribe(locale => {
             console.log(`[Language Change]: ${locale}`); // eslint-disable-line
         });
-        // Use en-US
-        this.translateService.use(this.usLocale);
         // Variable for today
         this.localToday = new Date(); // eslint-disable-line
         this.greeting = 'greeting';
@@ -29,10 +26,14 @@ export class DemoApp {
         this.demoVariables = {
             today: new Date(),
             name: 'Jane',
-            balance: 9874.34
+            balance: 9874.34,
+            count: 1
         };
         /* eslint-enable */
+        // Use en-US
+        this.changeLanguage(this.usLocale);
     }
+
     /* eslint-disable */
     changeLanguage(locale) {
         this.currentLocale = locale;
