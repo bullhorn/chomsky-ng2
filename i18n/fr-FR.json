@@ -2,11 +2,30 @@
   "greeting": "Bonjour!",
   "farewell": "Au revoir, {name}.",
   "today": "Aujourd hui est {today:date}.",
+  "formatToday": "Aujourd hui est {today:date:llll}.",
+  "alert": "Vous avez {count:number:0.00} message.",
   "debt": "Vouz devez: {balance:currency}",
   "messages": {
     "zero": "Vous n'avez pas de messages.",
     "1": "Vous avez {count:number} message.",
     "20": "Vous avez {count:number:0.00} messages.",
     "many": "Vous avez {count:number} messages."
+  },
+  "candidate": {
+    "male": {
+      "zero": "{host} n'a pas de {candidate} et il est triste.",
+      "1": "{host} a un {candidate} et il est excité.",
+      "many": "{host} a des {candidate} et il est extatique."
+    },
+    "female": {
+      "zero": "{host} n'a pas de {candidate} et elle est triste.",
+      "1": "{host} a un {candidate} et elle est excité.",
+      "many": "{host} a des {candidate} et elle est extatique."
+    },
+    "other": {
+      "zero": "{host} ont pas de {candidate} et ils sont tristes.",
+      "1": "{host} ont un {candidate} et ils sont excités.",
+      "many": "{host} ont des {candidate} et ils sont ravis."
+    }
   }
 }
