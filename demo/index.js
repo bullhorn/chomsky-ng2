@@ -13,7 +13,10 @@ import './index.scss';
     declarations: [
         DemoApp
     ],
-    imports: [BrowserModule, ChomskyModule],
+    imports: [
+        BrowserModule,
+        ChomskyModule
+    ],
     entryComponents: [
         DemoApp
     ],

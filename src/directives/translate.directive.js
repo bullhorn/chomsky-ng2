@@ -11,24 +11,23 @@ import { TranslateService } from '../services/translate.service';
     ]
 })
 export class Translate {
-    constructor(translateService:TranslateService, element:ElementRef) {
+    constructor(element:ElementRef) {
         this.element = element;
-        this.translateService = translateService;
     }
 
     ngOnInit() {
-        this.translateService.onLocaleChange.subscribe(() => {
+        TranslateService.onLocaleChange.subscribe(() => {
             this.renderContent(this.translate, this.dynamicValues);
         });
         this.renderContent(this.translate, this.dynamicValues);
     }
 
     ngOnDestroy() {
-        this.translateService.onLocaleChange.unsubscribe();
+        TranslateService.onLocaleChange.unsubscribe();
     }
 
     renderContent(key, interpolation) {
         // TODO: work with HTML (& NG2's HTML sanitation)
-        this.element.nativeElement.innerHTML = this.translateService.translate(key, interpolation);
+        this.element.nativeElement.innerHTML = TranslateService.translate(key, interpolation);
     }
 }

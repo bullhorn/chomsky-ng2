@@ -6,8 +6,7 @@ import { TranslateService } from '../services/translate.service';
     pure: false
 })
 export class TranslatePipe {
-    constructor(translateService:TranslateService, changeDetector:ChangeDetectorRef) {
-        this.translateService = translateService;
+    constructor(changeDetector:ChangeDetectorRef) {
         this.changeDetector = changeDetector;
         this.onLangChange = null;
         this.lastKey = '';
@@ -70,7 +69,7 @@ export class TranslatePipe {
      * @param dynamicVariables
      */
     updateValue(phraseKey, dynamicVariables) {
-        this.value = this.translateService.translate(phraseKey, dynamicVariables);
+        this.value = TranslateService.translate(phraseKey, dynamicVariables);
         this.changeDetector.markForCheck();
     }
 
@@ -91,7 +90,7 @@ export class TranslatePipe {
         this.lastParams = dynamicVariables;
         this.updateValue(phraseKey, dynamicVariables);
         this.unsubscribe();
-        this.onLangChange = this.translateService.onLocaleChange.subscribe(() => {
+        this.onLangChange = TranslateService.onLocaleChange.subscribe(() => {
             this.updateValue(phraseKey, dynamicVariables);
         });
         return this.value;

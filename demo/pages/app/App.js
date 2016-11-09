@@ -8,15 +8,15 @@ import { TranslateService } from './../../../src/chomsky-ng2';
     template: require('./App.html')
 })
 export class DemoApp {
-    constructor(translateService:TranslateService) {
+    constructor() {
         // Local instance
-        this.translateService = translateService;
+        this.translateService = TranslateService;
         // Locales
         this.usLocale = 'en-US'; // eslint-disable-line
         this.frLocale = 'fr-FR'; // eslint-disable-line
         this.ruLocale = 'ru-RU'; // eslint-disable-line
         // Listen for changes
-        this.translateService.onLocaleChange.subscribe(locale => {
+        TranslateService.onLocaleChange.subscribe(locale => {
             console.log(`[Language Change]: ${locale}`); // eslint-disable-line
         });
         // Variable for today
@@ -37,7 +37,8 @@ export class DemoApp {
     /* eslint-disable */
     changeLanguage(locale) {
         this.currentLocale = locale;
-        this.translateService.use(locale);
+        TranslateService.use(locale);
     }
+
     /* eslint-enable */
 }
