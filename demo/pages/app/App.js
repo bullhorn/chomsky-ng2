@@ -9,8 +9,6 @@ import { TranslateService } from './../../../src/chomsky-ng2';
 })
 export class DemoApp {
     constructor() {
-        // Local instance
-        this.translateService = TranslateService;
         // Locales
         this.usLocale = 'en-US'; // eslint-disable-line
         this.frLocale = 'fr-FR'; // eslint-disable-line
