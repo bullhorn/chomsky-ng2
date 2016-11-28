@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "noEmitHelpers": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "./demo/custom-typings.d.ts",
+    "./index.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "factories"
+  }
+}

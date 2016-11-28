@@ -1,10 +1,10 @@
 // NG2
 import { NgModule } from '@angular/core';
 // APP
-import { TranslatePipe } from './pipes/translate.pipe';
-import { Translate } from './directives/translate.directive';
+import { TranslatePipe } from './src/pipes/translate.pipe';
+import { Translate } from './src/directives/translate.directive';
 
-export * from './services/translate.service';
+export * from './src/services/translate.service';
 
 @NgModule({
     declarations: [TranslatePipe, Translate],
