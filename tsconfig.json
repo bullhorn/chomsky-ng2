@@ -30,6 +30,10 @@
     "forkChecker": true,
     "useCache": true
   },
+  "files": [
+    "./demo/custom-typings.d.ts",
+    "./index.ts"
+  ],
   "compileOnSave": false,
   "buildOnSave": false,
   "atom": {

@@ -6,8 +6,23 @@ interface SystemJS {
     import:(path?:string) => Promise<any>;
 }
 
-declare module "chomsky/lib/chomsky" {
+declare module 'chomsky/lib/chomsky' {
     export var Chomsky:any;
+}
+
+interface Chomsky {
+    dictionaryManager:any;
+    onLocaleChange:any;
+    formats:any;
+    location:string;
+    currentLocale:string;
+    setLocation(location?:any):void;
+    use(locale?:string):any;
+    translate(key?:string, interpolation?:any):any;
+    format(string?:any, format?:string, mask?:string):any;
+    formatDate(date?:Date, format?:string, mask?:string);
+    formatCurrency(value?:any, format?:string, localeOverride?:string):any;
+    formatNumber(numberString?:string, format?:string):any;
 }
 
 interface GlobalEnvironment {

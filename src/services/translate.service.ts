@@ -1,4 +1,4 @@
 import { Chomsky } from 'chomsky/lib/chomsky';
 
-export const TranslateService = new Chomsky();
+export const TranslateService:Chomsky = new Chomsky();
 console.log('T', TranslateService);
