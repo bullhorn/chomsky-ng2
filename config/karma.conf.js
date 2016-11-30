@@ -7,10 +7,14 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['jasmine'],
         exclude: [],
-        files: [{
-            pattern: './config/spec-bundle.js',
-            watched: false
-        }],
+        files: [
+            'node_modules/moment/min/moment-with-locales.min.js',
+            'node_modules/numbro/dist/numbro.min.js',
+            'node_modules/numbro/dist/languages.min.js', {
+                pattern: './config/spec-bundle.js',
+                watched: false
+            }
+        ],
         preprocessors: {
             './config/spec-bundle.js': ['coverage', 'webpack', 'sourcemap']
         },
