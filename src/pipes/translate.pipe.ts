@@ -6,12 +6,12 @@ import { TranslateService } from '../services/translate.service';
     pure: false
 })
 export class TranslatePipe implements PipeTransform, OnDestroy {
-    lastKey:string = '';
-    lastParams:string = '';
-    value:string;
-    onLangChange:any = null;
+    lastKey: string = '';
+    lastParams: string = '';
+    value: string;
+    onLangChange: any = null;
 
-    constructor(private changeDetector:ChangeDetectorRef) {
+    constructor(private changeDetector?: ChangeDetectorRef) {
         this.changeDetector = changeDetector;
     }
 
@@ -95,7 +95,7 @@ export class TranslatePipe implements PipeTransform, OnDestroy {
      * @param dynamicVariables
      * @returns {*}
      */
-    transform(phraseKey, dynamicVariables) {
+    transform(phraseKey: string, dynamicVariables?: any) {
         if (!phraseKey || phraseKey.length === 0) {
             return null;
         }

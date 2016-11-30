@@ -61,7 +61,7 @@ describe('Pipe: TranslatePipe', () => {
 
     describe('Function: ngOnDestroy()', () => {
         it('should call unsubscribe.', () => {
-            spyOn(pipe, 'unsubscribe').and.callFake(() => {});
+            spyOn(pipe, 'unsubscribe').and.callFake(() => { });
             expect(pipe.ngOnDestroy).toBeDefined();
             pipe.ngOnDestroy();
             expect(pipe.unsubscribe).toHaveBeenCalled();
@@ -72,10 +72,10 @@ describe('Pipe: TranslatePipe', () => {
         it('should update the value of the pipe and mark it for check.', () => {
             expect(pipe.updateValue).toBeDefined();
             pipe.translateService = {
-                translate: () => {}
+                translate: () => { }
             };
             pipe.changeDetector = {
-                markForCheck: () => {}
+                markForCheck: () => { }
             };
             spyOn(pipe.translateService, 'translate').and.callThrough();
             spyOn(pipe.changeDetector, 'markForCheck').and.callThrough();
@@ -102,7 +102,7 @@ describe('Pipe: TranslatePipe', () => {
             let key = 'greeting';
             pipe.translateService = {
                 onLocaleChange: {
-                    subscribe: () => {}
+                    subscribe: () => { }
                 }
             };
             spyOn(pipe.translateService.onLocaleChange, 'subscribe').and.callThrough();
@@ -121,7 +121,7 @@ describe('Pipe: TranslatePipe', () => {
         it('should unsubscribe to onLangChange and undefine it when it\'s defined.', () => {
             expect(pipe.unsubscribe).toBeDefined();
             pipe.onLangChange = {
-                unsubscribe: () => {}
+                unsubscribe: () => { }
             };
             spyOn(pipe.onLangChange, 'unsubscribe').and.callThrough();
             pipe.unsubscribe();

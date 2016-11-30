@@ -7,10 +7,10 @@ import { TranslateService } from '../services/translate.service';
     selector: '[translate]'
 })
 export class Translate implements OnInit, OnDestroy {
-    @Input() translate:string;
-    @Input() dynamicValues:any;
+    @Input() translate: string;
+    @Input() dynamicValues: any;
 
-    constructor(private element:ElementRef) {
+    constructor(private element: ElementRef) {
     }
 
     ngOnInit() {

@@ -8,17 +8,18 @@ import { TranslateService } from './../../../index';
     template: require('./App.html')
 })
 export class DemoApp {
-    public usLocale:string = 'en-US';
-    public frLocale:string = 'fr-FR';
-    public ruLocale:string = 'ru-RU';
-    public greeting:string = 'greeting';
-    public demoVariables:any = {
+    public usLocale: string = 'en-US';
+    public frLocale: string = 'fr-FR';
+    public ruLocale: string = 'ru-RU';
+    public greeting: string = 'greeting';
+    public demoVariables: any = {
         today: new Date(),
         name: 'Jane',
         balance: 9874.34,
         count: 1
     };
-    public currentLocale:string;
+    public currentLocale: string;
+    public translateService: any = TranslateService;
 
     constructor() {
         // Listen for changes
