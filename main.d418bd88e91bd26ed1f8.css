@@ -1,0 +1,57 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #2F384F; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+  color: rgba(47, 56, 79, 0.7);
+  margin-bottom: 1em; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 2em; }
+
+*:active,
+*:focus {
+  outline: none !important; }
+
+.jumbotron {
+  background-color: #2F384F;
+  color: rgba(255, 255, 255, 0.8); }
+
+.btn {
+  border: none; }
+  .btn.btn-primary {
+    background-color: #3399DD; }
+
+a {
+  color: #3399DD; }
+
+.nav-pills li {
+  cursor: pointer; }
+  .nav-pills li.active a,
+  .nav-pills li.active:hover > a {
+    background-color: #2F384F; }
+  .nav-pills li:hover a {
+    color: #2F384F;
+    background-color: transparent; }
+  .nav-pills li a {
+    color: rgba(47, 56, 79, 0.75);
+    transition: color 250ms, background-color 250ms; }
+
+.divider {
+  display: block;
+  border-bottom: dashed thin rgba(47, 56, 79, 0.25);
+  margin: 3em 0; }
+
+.affix {
+  right: 20px; }
+
+/*# sourceMappingURL=main.d418bd88e91bd26ed1f8.bundle.map*/
