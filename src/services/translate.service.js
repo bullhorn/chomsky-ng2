@@ -1,5 +1,3 @@
-import { Injectable } from '@angular/core';
-import { Chomsky } from 'chomsky/lib/chomsky';
-
-@Injectable()
-export class TranslateService extends Chomsky {}
+"use strict";
+var chomsky_1 = require('chomsky/lib/chomsky');
+exports.TranslateService = new chomsky_1.Chomsky();

@@ -1,9 +1,0 @@
-{
-    "extends": "bullhorn/angular2",
-    "rules": {
-        "global-require": 0
-    },
-    "globals": {
-        "VERSION": false
-    }
-}

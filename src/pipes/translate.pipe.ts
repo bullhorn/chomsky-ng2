@@ -1,23 +1,20 @@
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-var translate_service_1 = require('../services/translate.service');
-var TranslatePipe = (function () {
-    function TranslatePipe(changeDetector) {
-        this.changeDetector = changeDetector;
-        this.lastKey = '';
-        this.lastParams = '';
-        this.onLangChange = null;
+import { Pipe, ChangeDetectorRef, PipeTransform, OnDestroy } from '@angular/core';
+import { TranslateService } from '../services/translate.service';
+
+@Pipe({
+    name: 'translate',
+    pure: false
+})
+export class TranslatePipe implements PipeTransform, OnDestroy {
+    lastKey: string = '';
+    lastParams: string = '';
+    value: string;
+    onLangChange: any = null;
+
+    constructor(private changeDetector?: ChangeDetectorRef) {
         this.changeDetector = changeDetector;
     }
+
     /**
      * @name equals
      * @param objectOne
@@ -25,18 +22,18 @@ var TranslatePipe = (function () {
      * @returns {boolean}
      * @description A utility function for checking equality.
      */
-    TranslatePipe.prototype.equals = function (objectOne, objectTwo) {
+    equals(objectOne, objectTwo) {
         if (objectOne === objectTwo) {
             return true;
         }
         if (objectOne === null || objectTwo === null) {
             return false;
         }
-        var typeOne = typeof objectOne;
-        var typeTwo = typeof objectTwo;
-        var length;
-        var key;
-        var keySet;
+        let typeOne = typeof objectOne;
+        let typeTwo = typeof objectTwo;
+        let length;
+        let key;
+        let keySet;
         if (typeOne === typeTwo && typeOne === 'object') {
             if (Array.isArray(objectOne)) {
                 // Array checker
@@ -51,8 +48,7 @@ var TranslatePipe = (function () {
                     }
                     return true;
                 }
-            }
-            else {
+            } else {
                 // Object checker
                 if (Array.isArray(objectTwo)) {
                     return false;
@@ -73,31 +69,33 @@ var TranslatePipe = (function () {
             }
         }
         return false;
-    };
+    }
+
     /**
      * @name ngOnDestroy
      * @description Garbage collection for angular
      */
-    TranslatePipe.prototype.ngOnDestroy = function () {
+    ngOnDestroy() {
         this.unsubscribe();
-    };
+    }
+
     /**
      * @name updateValue
      * @param phraseKey
      * @param dynamicVariables
      */
-    TranslatePipe.prototype.updateValue = function (phraseKey, dynamicVariables) {
-        this.value = translate_service_1.TranslateService.translate(phraseKey, dynamicVariables);
+    updateValue(phraseKey, dynamicVariables) {
+        this.value = TranslateService.translate(phraseKey, dynamicVariables);
         this.changeDetector.markForCheck();
-    };
+    }
+
     /**
      * @name transform
      * @param phraseKey
      * @param dynamicVariables
      * @returns {*}
      */
-    TranslatePipe.prototype.transform = function (phraseKey, dynamicVariables) {
-        var _this = this;
+    transform(phraseKey: string, dynamicVariables?: any) {
         if (!phraseKey || phraseKey.length === 0) {
             return null;
         }
@@ -108,27 +106,19 @@ var TranslatePipe = (function () {
         this.lastParams = dynamicVariables;
         this.updateValue(phraseKey, dynamicVariables);
         this.unsubscribe();
-        this.onLangChange = translate_service_1.TranslateService.onLocaleChange.subscribe(function () {
-            _this.updateValue(phraseKey, dynamicVariables);
+        this.onLangChange = TranslateService.onLocaleChange.subscribe(() => {
+            this.updateValue(phraseKey, dynamicVariables);
         });
         return this.value;
-    };
+    }
+
     /**
      * @name unsubscribe
      */
-    TranslatePipe.prototype.unsubscribe = function () {
+    unsubscribe() {
         if (this.onLangChange) {
             this.onLangChange.unsubscribe();
             this.onLangChange = undefined;
         }
-    };
-    TranslatePipe = __decorate([
-        core_1.Pipe({
-            name: 'translate',
-            pure: false
-        }), 
-        __metadata('design:paramtypes', [core_1.ChangeDetectorRef])
-    ], TranslatePipe);
-    return TranslatePipe;
-}());
-exports.TranslatePipe = TranslatePipe;
+    }
+}

@@ -1,10 +1,10 @@
+import { ElementRef } from '@angular/core';
 import { Translate } from './translate.directive';
+
 describe('Directive: Translate', () => {
     let directive;
     beforeEach(() => {
-        let element = document.createElement('div');
-        element.nativeElement = element;
-        directive = new Translate({}, element);
+        directive = new Translate(new ElementRef({}));
     });
     it('should initialize', () => {
         expect(directive).toBeDefined();
@@ -16,9 +16,9 @@ describe('Directive: Translate', () => {
         it('should be defined.', () => {
             expect(directive.ngOnInit).toBeDefined();
             directive.translateService = {
-                translate: () => {},
+                translate: () => { },
                 onLocaleChange: {
-                    subscribe: () => {}
+                    subscribe: () => { }
                 }
             };
             spyOn(directive.translateService.onLocaleChange, 'subscribe').and.callThrough();
@@ -31,9 +31,9 @@ describe('Directive: Translate', () => {
         it('should unsubscribe from localeChange events.', () => {
             expect(directive.ngOnDestroy).toBeDefined();
             directive.translateService = {
-                translate: () => {},
+                translate: () => { },
                 onLocaleChange: {
-                    unsubscribe: () => {}
+                    unsubscribe: () => { }
                 }
             };
             spyOn(directive.translateService.onLocaleChange, 'unsubscribe').and.callThrough();

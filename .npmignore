@@ -13,7 +13,6 @@ CONTRIBUTING.md
 .codeclimate.yml
 
 config/
-src/
 .github/
 
 # testing
