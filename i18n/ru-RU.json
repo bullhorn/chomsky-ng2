@@ -2,14 +2,19 @@
   "greeting": "Привет!",
   "farewell": "Прощай, {name}.",
   "today": "Сегодня {today:date}.",
-  "formatToday": "Сегодня {today:date:llll}.",
-  "alert": "У вас есть {count:number:0.00} сообщение.",
+  "formatToday": "Сегодня {today:date}.",
+  "long": "Сегодня {today:date:long}.",
+  "timeLong": "Сегодня {today:date:timeLong}.",
+  "alert": "У вас есть {count:number} сообщение.",
   "debt": "Вы должны: {balance:currency}",
+  "html": "<b>I am HTML!</b>",
   "messages": {
-    "zero": "У вас нет сообщений.",
-    "1": "У вас есть {count:number} сообщение.",
-    "20": "У вас есть {count:number:0.00} сообщений.",
-    "many": "У вас есть {count:number} сообщений."
+    "other": {
+      "zero": "У вас нет сообщений.",
+      "1": "У вас есть {quantity:number} сообщение.",
+      "20": "У вас есть {quantity:number} сообщений.",
+      "many": "У вас есть {quantity:number} сообщений."
+    }
   },
   "candidate": {
     "male": {
