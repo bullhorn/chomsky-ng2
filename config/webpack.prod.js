@@ -55,18 +55,6 @@ module.exports = function () {
                 'VERSION': JSON.stringify(METADATA.VERSION),
                 'ENV': JSON.stringify(METADATA.ENV)
             }),
-            new UglifyJsPlugin({
-                beautify: false,
-                mangle: {
-                    screw_ie8: true,
-                    keep_fnames: true
-                },
-                compress: {
-                    screw_ie8: true
-                },
-                comments: false
-            }),
-
             new NormalModuleReplacementPlugin(
                 /angular2-hmr/,
                 helpers.root('config/modules/angular2-hmr-prod.js')

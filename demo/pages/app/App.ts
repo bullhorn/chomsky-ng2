@@ -1,6 +1,6 @@
 // NG2
 import { Component } from '@angular/core';
-// App
+// APP
 import { TranslateService } from './../../../index';
 
 @Component({
@@ -23,7 +23,7 @@ export class DemoApp {
 
     constructor() {
         // Listen for changes
-        console.log('WHAT', TranslateService);
+        console.log('[TranslateService]', TranslateService);
         TranslateService.onLocaleChange.subscribe(locale => {
             console.log(`[Language Change]: ${locale}`);
         });
@@ -31,11 +31,8 @@ export class DemoApp {
         this.changeLanguage(this.usLocale);
     }
 
-    /* eslint-disable */
     changeLanguage(locale) {
         this.currentLocale = locale;
         TranslateService.use(locale);
     }
-
-    /* eslint-enable */
 }

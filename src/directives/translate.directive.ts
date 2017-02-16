@@ -1,5 +1,6 @@
 // NG2
-import { ElementRef, Directive, Input, OnInit, OnDestroy } from '@angular/core';
+import { ElementRef, Directive, Input, OnInit, OnDestroy, HostBinding } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 // APP
 import { TranslateService } from '../services/translate.service';
 
@@ -10,14 +11,21 @@ export class Translate implements OnInit, OnDestroy {
     @Input() translate: string;
     @Input() dynamicValues: any;
 
-    constructor(private element: ElementRef) {
+    public translatedValue: SafeHtml;
+
+    @HostBinding('innerHTML')
+    get innerHTML() {
+        return this.translatedValue;
+    }
+
+    constructor(private sanitizer: DomSanitizer) {
     }
 
     ngOnInit() {
         TranslateService.onLocaleChange.subscribe(() => {
-            this.renderContent(this.translate, this.dynamicValues);
+            this.translatedValue = this.renderContent(this.translate, this.dynamicValues);
         });
-        this.renderContent(this.translate, this.dynamicValues);
+        this.translatedValue = this.renderContent(this.translate, this.dynamicValues);
     }
 
     ngOnDestroy() {
@@ -25,7 +33,6 @@ export class Translate implements OnInit, OnDestroy {
     }
 
     renderContent(key, interpolation) {
-        // TODO: work with HTML (& NG2's HTML sanitation)
-        this.element.nativeElement.innerHTML = TranslateService.translate(key, interpolation);
+        return this.sanitizer.bypassSecurityTrustHtml(TranslateService.translate(key, interpolation));
     }
 }

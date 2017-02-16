@@ -20,15 +20,10 @@ module.exports = function (options) {
         },
         resolve: {
             extensions: ['.ts', '.js', '.json'],
-            modules: [helpers.root('demo'), 'node_modules']
+            modules: [helpers.root('demo'), helpers.root('node_modules')]
         },
         module: {
             rules: [{
-                enforce: 'pre',
-                test: /\.ts$/,
-                loader: 'tslint-loader',
-                exclude: /(node_modules)/
-            }, {
                 test: /\.ts$/,
                 loaders: [
                     'awesome-typescript-loader'

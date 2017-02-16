@@ -2,14 +2,19 @@
   "greeting": "Bonjour!",
   "farewell": "Au revoir, {name}.",
   "today": "Aujourd hui est {today:date}.",
-  "formatToday": "Aujourd hui est {today:date:llll}.",
-  "alert": "Vous avez {count:number:0.00} message.",
+  "long": "Aujourd hui est {today:date:long}.",
+  "timeLong": "Aujourd hui est {today:date:timeLong}.",
+  "formatToday": "Aujourd hui est {today:date}.",
+  "alert": "Vous avez {count:number} message.",
   "debt": "Vouz devez: {balance:currency}",
+  "html": "<b>I am HTML!</b>",
   "messages": {
-    "zero": "Vous n'avez pas de messages.",
-    "1": "Vous avez {count:number} message.",
-    "20": "Vous avez {count:number:0.00} messages.",
-    "many": "Vous avez {count:number} messages."
+    "other": {
+      "zero": "Vous n'avez pas de messages.",
+      "1": "Vous avez {quantity:number} message.",
+      "20": "Vous avez {quantity:number} messages.",
+      "many": "Vous avez {quantity:number} messages."
+    }
   },
   "candidate": {
     "male": {

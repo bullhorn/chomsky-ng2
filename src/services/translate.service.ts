@@ -1,3 +1,3 @@
-import { Chomsky } from 'chomsky/lib/chomsky';
+import { Chomsky } from 'chomsky';
 
 export const TranslateService: Chomsky = new Chomsky();

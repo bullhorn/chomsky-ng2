@@ -2,14 +2,19 @@
   "greeting": "Hello!",
   "farewell": "Goodbye, {name}.",
   "today": "Today is {today:date}.",
-  "formatToday": "Today is {today:date:llll}.",
-  "alert": "You have {count:number:0.00} message.",
+  "long": "Today is {today:date:long}.",
+  "timeLong": "Today is {today:date:timeLong}.",
+  "formatToday": "Today is {today:date}.",
+  "alert": "You have {count:number} message.",
   "debt": "You owe: {balance:currency}",
+  "html": "<b>I am HTML!</b>",
   "messages": {
-    "zero": "You have no messages.",
-    "1": "You have {count:number} message.",
-    "20": "You have {count:number:0.00} messages.",
-    "many": "You have {count:number} messages."
+    "other": {
+      "zero": "You have no messages.",
+      "1": "You have {quantity:number} message.",
+      "20": "You have {quantity:number} messages.",
+      "many": "You have {quantity:number} messages."
+    }
   },
   "candidate": {
     "male": {
@@ -29,4 +34,3 @@
     }
   }
 }
-
