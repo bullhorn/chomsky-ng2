@@ -7,28 +7,18 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['jasmine'],
         exclude: [],
-        files: [
-            'node_modules/numbro/dist/languages.min.js', {
-                pattern: './config/spec-bundle.js',
-                watched: false
-            }
-        ],
+        files: [{
+            pattern: './config/spec-bundle.js',
+            watched: false
+        }],
         preprocessors: {
-            './config/spec-bundle.js': ['coverage', 'webpack', 'sourcemap']
+            './config/spec-bundle.js': ['webpack']
         },
         webpack: testWebpackConfig,
-        coverageReporter: {
-            type: 'in-memory'
-        },
-        remapCoverageReporter: {
-            'text-summary': null,
-            json: './coverage/coverage.json',
-            html: './coverage/html'
-        },
         webpackMiddleware: {
             stats: 'errors-only'
         },
-        reporters: ['mocha', 'coverage', 'remap-coverage'],
+        reporters: ['mocha'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
