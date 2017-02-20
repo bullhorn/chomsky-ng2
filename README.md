@@ -15,41 +15,22 @@
 
     # Clone the project
     git clone git@github.com:bullhorn/chomsky-ng2.git
-    
+
     # Change directory
     cd chomsky-ng2
-    
+
     # Install
     npm install
-    
+
     # Start
     npm start
-    
+
 ## Integrating into a project
 
     # Install the modile
     npm install --save chomsky-ng2
-    
+
 Depending on what system you are using (SystemJS, Webpack, etc..) the setup will vary.
-
-**SystemJS**
-
-> For SystemJS you will need to add some mappings in order to successfully use this library
-
-    // Add a SystemJS Config mapping for chomsky-ng2
-    // A MomentJS mapping is required as well
-    System.config({
-        defaultJSExtensions: true,
-        paths: {
-            'chomsky-ng2': '/node_modules/chomsky-ng2/lib/chomsky-ng2.js',
-            'moment': '/node_modules/moment/moment.js',
-            ...
-        }
-    });
-    
-**Note:** You can forgo adding the mappings and just include `chomsky-ng2/bundles/chomsky-ng2.js` as a script tag into your `index.html` page instead.
-    
-If using SCSS/SASS you will need to include the following includes: `node_modules/chomsky-ng2/lib` and `node_modules/hint.css/src`.
 
 ## Build/Release/Publish
 
@@ -57,7 +38,7 @@ If using SCSS/SASS you will need to include the following includes: `node_module
 
     # Bump the version up via NPM
     npm version patch|major|minor
-    
+
     # This runs the following scripts AUTOMATICALLY
     # npm test
     # npm run changelog (pushes git)
@@ -66,23 +47,23 @@ If using SCSS/SASS you will need to include the following includes: `node_module
     # npm run compile (demo/bundles)
     # npm run deploy:gh-pages
     # npm publish
-    
+
 ## Scripts
 
 **clean**
 Cleans up the generated files/folders.
 
     npm run clean
-    
+
 **compile**
 Compiles the main lib and bundles the SystemJS modules
 
     npm run compile
-    
+
     # This runs the following scripts AUTOMATICALLY
     # npm run compile:lib
     # npm run compile:system
-    
+
 **compile:lib**
 Compiles the `src` folder into `lib` via babel
 
