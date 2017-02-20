@@ -7,9 +7,6 @@
 /demo/**/*.js.map
 /demo/**/*.d.ts
 !demo/custom-typings.d.ts
-/src/**/*.js
-/src/**/*.js.map
-/src/**/*.d.ts
 index.js
 index.d.ts
 
@@ -17,6 +14,7 @@ index.d.ts
 # dependencies
 /node_modules
 /bower_components
+/factories
 
 # IDEs and editors
 /.idea
