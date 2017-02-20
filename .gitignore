@@ -7,6 +7,9 @@
 /demo/**/*.js.map
 /demo/**/*.d.ts
 !demo/custom-typings.d.ts
+/src/**/*.js
+/src/**/*.js.map
+/src/**/*.d.ts
 index.js
 index.d.ts
 
