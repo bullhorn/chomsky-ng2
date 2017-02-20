@@ -4,7 +4,7 @@
   "description": "An Angular 2 module that leverages Chomsky for i18n.",
   "scripts": {
     "precommit": "npm run lint",
-    "clean": "node_modules/.bin/rimraf coverage dist",
+    "clean": "node_modules/.bin/rimraf coverage dist factories",
     "compile": "ngc -p tsconfig.publish.json",
     "prepublish": "npm run clean && npm run compile",
     "postpublish": "npm run deploy:gh-pages",
