@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "entryFile": "src/platform/index.ts",
+    "externals": {
+      "@angular/core": "ng.core",
+      "@angular/common": "ng.common",
+      "chomsky": "bh.chomsky"
+    }
+  }
+}

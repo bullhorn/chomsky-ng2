@@ -1,0 +1,123 @@
+$black: #000000;
+$white: #ffffff;
+$grey: #999999;
+$off-white: #f4f4f4;
+$dark: #3D464D;
+$light: #D9DADC;
+$navy: #0D2D42;
+$pulse: #3BAFDA;
+// Analytics Colors
+$aqua: #3BAFDA;
+$ocean: #4A89DC;
+$mint: #37BC9B;
+$grass: #8CC152;
+$sunflower: #F6B042;
+$bittersweet: #EB6845;
+$grapefruit: #DA4453;
+$carnation: #D770AD;
+$lavender: #967ADC;
+// Entity Colors
+$company: #3399DD;
+$candidate: #44BB77;
+$navigation: #2F384F;
+$lead: #AA6699;
+$contact: #FFAA44;
+$opportunity: #662255;
+$job: #BB5566;
+$submission: #778899;
+$placement: #0B344F;
+$note: #747884;
+// Color Applications
+$positive: $ocean;
+$success: $grass;
+$negative: $grapefruit;
+$warning: $sunflower;
+$background: $off-white;
+$background-dark: #E2E2E2;
+$neutral: #747884;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: $navigation;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 300;
+    color: rgba($navigation, .7);
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {}
+
+h5 {}
+
+*:active,
+*:focus {
+    outline: none !important;
+}
+
+.jumbotron {
+    background-color: $navigation;
+    color: rgba(white, .8);
+}
+
+.btn {
+    border: none;
+    &.btn-primary {
+        background-color: $company;
+    }
+}
+
+a {
+    color: $company;
+}
+
+.nav-pills {
+    li {
+        cursor: pointer;
+        &.active {
+            a,
+            &:hover>a {
+                background-color: $navigation;
+            }
+        }
+        &:hover {
+            a {
+                color: $navigation;
+                background-color: transparent;
+            }
+        }
+        a {
+            color: rgba($navigation, .75);
+            transition: color 250ms, background-color 250ms;
+        }
+    }
+}
+
+.divider {
+    display: block;
+    border-bottom: dashed thin rgba($navigation, .25);
+    margin: 3em 0;
+}
+
+.affix {
+    right: 20px;
+}

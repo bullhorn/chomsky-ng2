@@ -2,48 +2,42 @@
 
 # compiled output
 /dist
+/dist-ghpages
 /tmp
-/demo/**/*.js
-/demo/**/*.js.map
-/demo/**/*.d.ts
-!demo/custom-typings.d.ts
-/src/**/*.js
-/src/**/*.js.map
-/src/**/*.d.ts
-index.js
-index.js.map
-index.d.ts
-
+/out-tsc
 
 # dependencies
 /node_modules
-/bower_components
-/factories
 
 # IDEs and editors
 /.idea
-/.vscode
 .project
 .classpath
+.c9/
 *.launch
 .settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
-.awcache/
 /.sass-cache
 /connect.lock
-/coverage/*
+/coverage
 /libpeerconnection.log
 npm-debug.log
 testem.log
 /typings
-/**/*.metadata.json
-/**/*.ngfactory.ts
 
 # e2e
 /e2e/*.js
 /e2e/*.map
 
-#System Files
+# System Files
 .DS_Store
 Thumbs.db
